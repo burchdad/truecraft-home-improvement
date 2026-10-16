@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "slug": "wood-interior",
+    "width": 1086,
+    "height": 1448,
+    "alt": "Wood-paneled interior with white door trim and ceiling beams.",
+    "widths": [480, 960, 1086]
+  },
+  {
+    "id": 4,
+    "slug": "living-room",
+    "width": 2048,
+    "height": 1536,
+    "alt": "Wide view of living room with fireplace and built-in shelves.",
+    "widths": [480, 960, 1600]
+  },
+  {
+    "id": 7,
+    "slug": "enclosed-room",
+    "width": 1536,
+    "height": 2048,
+    "alt": "Wood-lined enclosed room with ceiling fans and large windows.",
+    "widths": [480, 960, 1536]
+  },
+  {
+    "id": 8,
+    "slug": "rear-enclosure",
+    "width": 2048,
+    "height": 1152,
+    "alt": "Rear house enclosure with metal roof beside a swimming pool.",
+    "widths": [480, 960, 1600]
+  },
+  {
+    "id": 10,
+    "slug": "kitchen",
+    "width": 720,
+    "height": 960,
+    "alt": "Kitchen with white cabinets, island, patterned counters and wood-look flooring.",
+    "widths": [480, 720]
+  },
+  {
+    "id": 11,
+    "slug": "garage",
+    "width": 2048,
+    "height": 1536,
+    "alt": "Blue-walled garage with speckled floor and geometric ceiling lighting.",
+    "widths": [480, 960, 1600]
+  },
+  {
+    "id": 12,
+    "slug": "wood-fence",
+    "width": 2048,
+    "height": 1536,
+    "alt": "Wood privacy fence along a residential yard.",
+    "widths": [480, 960, 1600]
+  },
+  {
+    "id": 15,
+    "slug": "bathroom",
+    "width": 1536,
+    "height": 2048,
+    "alt": "Bathroom with tub, tiled walk-in shower and polished tile flooring.",
+    "widths": [480, 960, 1536]
+  },
+  {
+    "id": 17,
+    "slug": "double-vanity",
+    "width": 1536,
+    "height": 2048,
+    "alt": "Double-sink bathroom vanity with white cabinets and tiled floor.",
+    "widths": [480, 960, 1536]
+  },
+  {
+    "id": 19,
+    "slug": "front-porch",
+    "width": 1536,
+    "height": 2048,
+    "alt": "Front view of a wood porch with central steps and an overhead cover.",
+    "widths": [480, 960, 1536]
+  }
+]

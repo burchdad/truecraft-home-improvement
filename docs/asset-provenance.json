@@ -1,0 +1,67 @@
+{
+  "verifiedOriginals": 21,
+  "uniqueHashes": 20,
+  "source": "Owner-uploaded TrueCraft project assets supplied for the private Codex website draft.",
+  "selected": [
+    {
+      "index": 1,
+      "original": "769056335_1688320113293543_7542142849536382902_n.jpg",
+      "sha256": "a813da3f6f8d2178b6b7d3f65f99870eca044ffbf28ae87ba207c2a752e03db0",
+      "derivative": "wood-interior"
+    },
+    {
+      "index": 4,
+      "original": "778711386_1700673725391515_5429099134378483616_n.jpg",
+      "sha256": "b9265fd102e0276d92ece8227e96099a6a72ad902f6cca87bb145124427057b6",
+      "derivative": "living-room"
+    },
+    {
+      "index": 7,
+      "original": "736440544_1651149117010643_7802213788325190097_n.jpg",
+      "sha256": "48001b4133d195bc16ab8019a9b8e46b77fc35f69a919d208f8501cc451a4a9e",
+      "derivative": "enclosed-room"
+    },
+    {
+      "index": 8,
+      "original": "736479299_1651149570343931_8703737606996971434_n.jpg",
+      "sha256": "b01153e4f6882ada17d1c85d774e69fc34507845d0cf71798df8097030b075d6",
+      "derivative": "rear-enclosure"
+    },
+    {
+      "index": 10,
+      "original": "850556231_1775894241202796_1772748699811123214_n(1).jpg",
+      "sha256": "ebb934bd5390650b191180dac3add0141b0224db7671c395d9927a5c7984a724",
+      "derivative": "kitchen"
+    },
+    {
+      "index": 11,
+      "original": "659157236_1563969555728600_466300619083827949_n.jpg",
+      "sha256": "630265f851911182ad1ae75a9be5bdb3f5928d92df3a0a1130b591f346644285",
+      "derivative": "garage"
+    },
+    {
+      "index": 12,
+      "original": "535408598_1363741369084754_8216581022114763982_n.jpg",
+      "sha256": "4798d69801034a0e2db0fdc0bba9872e19eeb015bd7b910b7e885367ff547d08",
+      "derivative": "wood-fence"
+    },
+    {
+      "index": 15,
+      "original": "654652117_1556364599822429_6806637846534949211_n.jpg",
+      "sha256": "e938133b437a32fb2992d45edbd359bc54150746e52f485fb40457f02d85a099",
+      "derivative": "bathroom"
+    },
+    {
+      "index": 17,
+      "original": "775261327_1699277405531147_3644400047793863002_n.jpg",
+      "sha256": "bb18420edc1d0041cc2deb1e2bfdc0d275fde3dc9bfb9307aaf23d396f60174c",
+      "derivative": "double-vanity"
+    },
+    {
+      "index": 19,
+      "original": "748948383_1665429945582560_4805305451016969646_n.jpg",
+      "sha256": "2a019f95c912145cfeec6ea83f67ca3a48d0475be240e7b47ffa6e39363860cb",
+      "derivative": "front-porch"
+    }
+  ]
+}

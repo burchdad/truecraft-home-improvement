@@ -1,0 +1,19 @@
+{
+  "context": "Single Chromium run against loopback, cold page, no network/CPU throttling. Not Lighthouse, field CWV or an INP measurement.",
+  "results": [
+    {
+      "width": 390,
+      "lcp": 144,
+      "cls": 0,
+      "initialTransferredBytes": 150982,
+      "requests": 7
+    },
+    {
+      "width": 1440,
+      "lcp": 124,
+      "cls": 0,
+      "initialTransferredBytes": 712544,
+      "requests": 9
+    }
+  ]
+}

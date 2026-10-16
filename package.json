@@ -1,0 +1,34 @@
+{
+  "name": "truecraft-home-improvement",
+  "version": "1.0.0",
+  "description": "Repository for the TrueCraft Home Improvement website.",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node src/server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "check": "node --check src/server.mjs && node --check public/site.js && node --check src/templates.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burchdad/truecraft-home-improvement.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/burchdad/truecraft-home-improvement/issues"
+  },
+  "homepage": "https://github.com/burchdad/truecraft-home-improvement#readme",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "prettier": "^3.9.10",
+    "sharp": "^0.35.5"
+  },
+  "private": true
+}

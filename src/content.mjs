@@ -1,0 +1,89 @@
+export const business = {
+  name: "TrueCraft Home Improvements LLC",
+  phone: "(903) 275-0361",
+  tel: "tel:+19032750361",
+  base: "Frankston, Texas",
+  established: "2021",
+  reviewDate: "October 16, 2026",
+  maps: "https://www.google.com/maps/place/TrueCraft+Home+Improvements+LLC/@32.212331,-95.555003,10z/data=!3m1!4b1!4m6!3m5!1s0x88e565b767eb47b7:0xecf931e13c3ce431!8m2!3d32.212331!4d-95.555003!16s%2Fg%2F11yfdxvk3k?hl=en&entry=ttu",
+};
+export const services = [
+  {
+    id: "kitchens-bathrooms",
+    name: "Kitchens & bathrooms",
+    photo: 10,
+    copy: "Make room for the way you live. Talk with us about improvements to your kitchen or bathroom.",
+  },
+  {
+    id: "interiors",
+    name: "Interior improvements",
+    photo: 1,
+    copy: "From drywall to interior updates, tell us which parts of your home you would like to improve.",
+  },
+  {
+    id: "exteriors",
+    name: "Exterior & outdoor projects",
+    photo: 19,
+    copy: "Explore possibilities for your porch, decking, wood staining or fencing. Share your ideas and the space you have in mind.",
+  },
+  {
+    id: "other",
+    name: "Other projects",
+    photo: 11,
+    copy: "Have something else in mind? Describe your home improvement or repair project so we can discuss whether it is a fit.",
+  },
+];
+export const reviews = [
+  {
+    quote: "His crew was professional, friendly, and a pleasure to work with.",
+    name: "Quence Miller",
+  },
+  {
+    quote: "They are prompt, dependable and professional!!",
+    name: "Larry Harper",
+  },
+];
+export const projects = [
+  { id: 15, title: "Bathroom", category: "Interiors" },
+  { id: 19, title: "Wood porch", category: "Outdoors" },
+  { id: 4, title: "Living room", category: "Interiors" },
+  { id: 11, title: "Garage", category: "Interiors" },
+  { id: 10, title: "Kitchen", category: "Interiors" },
+  { id: 8, title: "Rear enclosure", category: "Outdoors" },
+  { id: 1, title: "Interior details", category: "Interiors" },
+  { id: 12, title: "Wood fencing", category: "Outdoors" },
+  { id: 17, title: "Double vanity", category: "Interiors" },
+  { id: 7, title: "Enclosed room", category: "Interiors" },
+];
+export const routes = [
+  [
+    "/",
+    "Home",
+    "Home improvements in Frankston, Texas. Explore TrueCraft’s kitchens, bathrooms, interior and outdoor project photography.",
+  ],
+  [
+    "/services/",
+    "Services",
+    "Explore kitchen, bathroom, interior, exterior and fencing services with TrueCraft Home Improvements, based in Frankston, Texas.",
+  ],
+  [
+    "/our-work/",
+    "Our Work",
+    "Browse genuine TrueCraft photographs of living rooms, bathrooms, porches, fencing and other home improvement subjects.",
+  ],
+  [
+    "/about/",
+    "About",
+    "Meet TrueCraft Home Improvements LLC: based in Frankston, Texas and established in 2021.",
+  ],
+  [
+    "/request-estimate/",
+    "Request an Estimate",
+    "Plan your project conversation with TrueCraft. Call (903) 275-0361 or explore the preview estimate form.",
+  ],
+  [
+    "/privacy/",
+    "Privacy",
+    "How this private TrueCraft website preview handles information and inquiry form entries.",
+  ],
+];

@@ -25,7 +25,7 @@ The form is explicitly **Preview only, not connected**. Submit is disabled. “C
 
 The Node endpoint is a defensive preview endpoint: JSON/size/origin checks, bounded field validation, honeypot, short-lived per-address rate limit, idempotency-key format check, and a server-only provider boundary. `PreviewProvider` always refuses acceptance with 503 and never persists or sends. There is no environment switch that enables live delivery, and no actual recipient exists in executable configuration. Duplicate preview requests cannot cause duplicate sends because there are no sends. Exception paths never report success.
 
-`dispatchInquiry` defines a future contract: an approved provider must return a durable receipt ID before the application may say received. Its successful path is exercised only with a synthetic in-process mock. **This is not a completed production integration.** Durable storage, atomic deduplication by stable key, notification queue/retry, operator alerts, cross-instance rate limiting, origin configuration for the final domain and real provider implementation remain necessary. Do not connect a notification-only adapter that claims durable receipt without approved durable storage.
+`dispatchInquiry` defines a future contract: an approved provider must return a durable receipt ID before the application may say received. Its successful path is exercised only with a synthetic in-process mock. A separate, disabled Resend notification adapter now exists in `src/adapters/resend.mjs` with mocked tests; it does not implement inquiry acceptance and is not wired into the server. See `RESEND-INTEGRATION.md`. **This is not a completed production integration.** Durable storage, atomic deduplication by stable key, notification queue/retry, operator alerts, cross-instance rate limiting, origin configuration for the final domain and real provider implementation remain necessary. Do not connect a notification-only adapter that claims durable receipt without approved durable storage.
 
 No actual email was sent and no homeowner data was submitted. The tentative recipient from the handoff is unconfirmed and is not a public contact or active destination.
 
@@ -34,7 +34,7 @@ No actual email was sent and no homeowner data was submitted. The tentative reci
 - `PORT`: optional local preview port, default 4173.
 - `CHROMIUM_PATH`: optional browser executable for QA.
 - `SITE_URL`: optional **confirmed HTTPS origin** at build time; emits canonical URLs, absolute social preview URL and sitemap. Omitted until domain confirmation. No fake host is used.
-- No backend credential variables exist yet. After provider selection, define server-only credential, approved recipient, storage/queue and origin settings in the integration change. Their exact names depend on the approved provider; inventing credential configuration now would be misleading.
+- The disconnected Resend notification adapter reads no environment variables. Proposed future server-only settings are documented in RESEND-INTEGRATION.md; no credentials are configured. Storage/queue and production origin settings still await an approved architecture.
 
 All pages always emit noindex/nofollow; robots disallows crawling and the server also emits X-Robots-Tag. Production indexing cannot be enabled by an accidental environment change. Remove these intentionally only after launch approval. Visible Google proof is attributed and dated October 16, 2026. Organization structured data omits ratings, street address, geo, hours and unsupported claims.
 

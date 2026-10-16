@@ -10,7 +10,8 @@ export class PreviewProvider {
   }
 }
 // Future adapters must durably accept by idempotency key before returning accepted:true.
-// No production provider is supplied or selectable through environment variables.
+// No live acceptance provider is supplied or selectable through environment variables.
+// The disconnected Resend notifier is not a durable acceptance provider.
 export async function dispatchInquiry(provider, data, key) {
   try {
     const result = await provider.accept({ data, idempotencyKey: key });

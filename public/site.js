@@ -19,14 +19,10 @@ document.addEventListener("keydown", (e) => {
     menu.focus();
   }
 });
-nav.addEventListener("focusout", () => {
-  queueMicrotask(() => {
-    if (
-      !nav.contains(document.activeElement) &&
-      document.activeElement !== menu
-    )
-      closeMenu();
-  });
+// Touch can blur the focused link before the toggle's click arrives. Closing
+// on blur would make that same click reopen the menu instead of closing it.
+document.addEventListener("click", (event) => {
+  if (!nav.contains(event.target) && !menu.contains(event.target)) closeMenu();
 });
 matchMedia("(min-width: 801px)").addEventListener("change", closeMenu);
 const filters = document.querySelector(".filters");

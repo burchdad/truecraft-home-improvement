@@ -1,0 +1,9 @@
+# Photo-led homepage refinement — October 16, 2026
+
+Reference: https://www.neilkelly.com/ . Live page content was retrieved; attempted Chromium inspection failed with ERR_TUNNEL_CONNECTION_FAILED. Visual assessment therefore used the two screenshots supplied by the owner, not a claimed live browser render. Observed presentation: large edge-to-edge hero, compact overlaid navigation, lower centered headline/actions and spacious image-led sections. No competitor assets, code, claims or copy were incorporated.
+
+TrueCraft adaptation: full-width living-room hero with navy readability gradients, cream typography and gold estimate action; compact overlaid desktop header; lower centered verified service/place headline. Mobile shows the complete 4:3 photograph above a navy copy panel, avoiding a tight portrait crop. Attributed Google excerpt follows the hero. Four distinct featured photos form a desktop row; services retain real photos and preselected estimate links. Section spacing is more compact while maintaining clear separation. Old split-hero CSS removed.
+
+Validation: build and syntax checks; 18 unit/integration tests; 11 browser suites covering five widths plus narrow landscape, zoom, accessibility, menus, image loading, filters and inquiry errors. Touch open/close, Escape and navigation regression tests pass at 333px and 390px. Home service-card preselection separately checked at 390 and 1440. Updated local desktop/mobile full-page and first-screen screenshots in docs/qa. Live-host browser access has previously been blocked; local screenshots must not be described as deployed captures.
+
+No changes to menu JavaScript, inquiry handling, verified facts or image provenance. Sending remains disabled; noindex remains on. Vercel project authentication protection checked before preview update. Main and production must remain unchanged. Owner reports the earlier unintended production deployment was deleted.

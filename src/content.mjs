@@ -22,7 +22,7 @@ export const services = [
   },
   {
     id: "exteriors",
-    name: "Exterior & outdoor projects",
+    name: "Outdoor projects",
     photo: 19,
     copy: "Explore possibilities for your porch, decking, wood staining or fencing. Share your ideas and the space you have in mind.",
   },
@@ -44,17 +44,44 @@ export const reviews = [
   },
 ];
 export const projects = [
-  { id: 15, title: "Bathroom", category: "Interiors" },
-  { id: 19, title: "Wood porch", category: "Outdoors" },
+  {
+    id: 15,
+    title: "Bathroom",
+    category: "Interiors",
+    description:
+      "A tub, tiled shower and patterned floor, shown together in one room.",
+  },
+  {
+    id: 19,
+    title: "Wood porch",
+    category: "Outdoors",
+    description:
+      "A covered wood porch with central steps and open views of the yard.",
+  },
   { id: 4, title: "Living room", category: "Interiors" },
-  { id: 11, title: "Garage", category: "Interiors" },
+  {
+    id: 11,
+    title: "Garage",
+    category: "Interiors",
+    description: "Blue walls, a speckled floor and geometric ceiling lighting.",
+  },
   { id: 10, title: "Kitchen", category: "Interiors" },
   { id: 8, title: "Rear enclosure", category: "Outdoors" },
-  { id: 1, title: "Interior details", category: "Interiors" },
+  {
+    id: 1,
+    title: "Interior details",
+    category: "Interiors",
+    description:
+      "Wood-lined walls and ceiling beams framed by white door trim.",
+  },
   { id: 12, title: "Wood fencing", category: "Outdoors" },
   { id: 17, title: "Double vanity", category: "Interiors" },
   { id: 7, title: "Enclosed room", category: "Interiors" },
 ];
+export const featuredProjects = [15, 1, 19, 11].map((id) =>
+  projects.find((p) => p.id === id),
+);
+export const serviceGroups = services.filter((s) => s.id !== "other");
 export const routes = [
   [
     "/",

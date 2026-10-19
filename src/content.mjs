@@ -86,12 +86,12 @@ export const routes = [
   [
     "/",
     "Home",
-    "Home improvements in Frankston, Texas. Explore TrueCraft’s kitchens, bathrooms, interior and outdoor project photography.",
+    "Home improvements serving Tyler and surrounding East Texas communities. Explore TrueCraft’s kitchens, bathrooms, interior and outdoor project photography.",
   ],
   [
     "/services/",
     "Services",
-    "Explore kitchen, bathroom, interior, exterior and fencing services with TrueCraft Home Improvements, based in Frankston, Texas.",
+    "Explore kitchen, bathroom, interior, exterior and fencing services with TrueCraft Home Improvements, serving Tyler and surrounding East Texas communities.",
   ],
   [
     "/our-work/",
@@ -101,12 +101,12 @@ export const routes = [
   [
     "/about/",
     "About",
-    "Meet TrueCraft Home Improvements LLC: based in Frankston, Texas and established in 2021.",
+    "Meet TrueCraft Home Improvements LLC, serving Tyler and East Texas. Based in Frankston, Texas and established in 2021.",
   ],
   [
     "/request-estimate/",
     "Request an Estimate",
-    "Plan your project conversation with TrueCraft. Call (903) 275-0361 or explore the preview estimate form.",
+    "Plan your Tyler or East Texas home improvement project with TrueCraft. Call (903) 275-0361 or explore the preview estimate form.",
   ],
   [
     "/privacy/",

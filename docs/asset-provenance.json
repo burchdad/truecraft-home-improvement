@@ -63,5 +63,14 @@
       "sha256": "2a019f95c912145cfeec6ea83f67ca3a48d0475be240e7b47ffa6e39363860cb",
       "derivative": "front-porch"
     }
-  ]
+  ],
+  "logo": {
+    "file": "public/images/truecraft-authentic-logo-facebook.jpg",
+    "source": "https://www.facebook.com/photo/?fbid=1266369358821956&set=a.541866321272267",
+    "officialPage": "https://www.facebook.com/p/TrueCraft-Home-Improvements-100063467111862/",
+    "business": "Bo Frizzell \u2014 TrueCraft Home Improvements LLC \u2014 903-275-0361",
+    "sha256": "5a773b21270e85a4f6c41129d2196673ed992536faf5b3d15d2dc33cbe3d32f3",
+    "dimensions": "1024 \u00d7 1024",
+    "notes": "Original official profile image, visually inspected; displayed uncropped with original proportions and artwork."
+  }
 }

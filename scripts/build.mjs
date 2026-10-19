@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import { routes } from "../src/content.mjs";
 import { render } from "../src/templates.mjs";
 const production = process.env.VERCEL_ENV === "production";
-let siteUrl = process.env.SITE_URL || (production ? "https://truecraft-home-improvements-ghostaisolutions-projects.vercel.app" : undefined);
+let siteUrl = process.env.SITE_URL || (production ? "https://truecraft-home-improvements.vercel.app" : undefined);
 if (production && !siteUrl) throw Error("Production requires SITE_URL");
 if (siteUrl) {
   const url = new URL(siteUrl);

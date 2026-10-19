@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {render} from '../src/templates.mjs';
-const siteUrl='https://truecraft-home-improvements.vercel.app';
+const siteUrl='https://truecraft-home-improvements-ghostaisolutions-projects.vercel.app';
 test('production is indexable, canonical and call-only',()=>{
  for(const path of ['/', '/services/', '/request-estimate/', '/privacy/']) {
  const html=render(path,{production:true,siteUrl});

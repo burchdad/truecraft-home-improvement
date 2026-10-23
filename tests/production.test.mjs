@@ -18,7 +18,7 @@ test('default preview retains noindex and disconnected form',()=>{
  const html=render('/request-estimate/');
  assert.match(html,/noindex, nofollow/);
  assert.match(html,/PRIVATE DESIGN PREVIEW/);
- assert.match(html,/Sending unavailable/);
+ assert.match(html,/Online sending unavailable/);
 });
 test('estimate actions call directly and planning remains secondary', () => {
  for (const path of ['/', '/services/', '/our-work/', '/about/', '/request-estimate/']) {

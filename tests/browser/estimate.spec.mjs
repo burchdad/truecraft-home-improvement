@@ -1,0 +1,13 @@
+import {test,expect} from '@playwright/test';
+async function fill(page){await page.getByLabel('Your name',{exact:true}).fill('Synthetic Test');await page.getByLabel('How should TrueCraft contact you?').selectOption('email');await page.getByLabel('Email address',{exact:true}).fill('synthetic@example.invalid');await page.getByLabel('Project town or ZIP').fill('Tyler');await page.getByLabel('Project type').selectOption('other');await page.getByLabel('Describe your project').fill('Synthetic local request only.');await page.getByLabel(/I agree to share/).check();}
+test('preview never sends, consent is required and no price is shown',async({page})=>{
+ await page.goto('/request-estimate/');await expect(page.getByRole('button',{name:'Online sending unavailable'})).toBeDisabled();await expect(page.getByText('No price is calculated here.',{exact:false})).toBeVisible();await fill(page);await page.getByLabel(/I agree to share/).uncheck();await page.getByRole('button',{name:'Check details locally'}).click();await expect(page.locator('#consent')).toHaveAttribute('aria-invalid','true');await expect(page.locator('#estimate-errors')).toBeFocused();
+ let posts=0;page.on('request',r=>{if(r.method()==='POST')posts++;});await page.getByLabel(/I agree to share/).check();await page.locator('#estimate-request').evaluate(f=>f.requestSubmit());await expect(page.getByRole('status')).toContainText('Nothing was sent or saved');expect(posts).toBe(0);
+});
+test('mocked server failure retains fields and retry key; success never claims delivery',async({page})=>{
+ await page.goto('/request-estimate/');await fill(page);const keys=[];let attempt=0;
+ await page.route('**/api/estimate-requests',async route=>{keys.push(route.request().headers()['idempotency-key']);attempt++;await route.fulfill({status:attempt===1?503:202,contentType:'application/json',body:JSON.stringify(attempt===1?{accepted:false}:{accepted:true,id:'mock-id',notification:'submitted'})});});
+ // Enable only in this mocked browser test, never via production configuration.
+ await page.locator('#estimate-request').evaluate(f=>{f.dataset.submitEnabled='true';f.querySelector('[type=submit]').disabled=false;});
+ await page.locator('#send-estimate').click();await expect(page.getByRole('status')).toContainText('could not confirm');await expect(page.getByLabel('Your name',{exact:true})).toHaveValue('Synthetic Test');await page.locator('#send-estimate').click();await expect(page.getByRole('status')).toContainText('Inbox delivery and Bo’s review are not yet confirmed');expect(keys[0]).toBe(keys[1]);await expect(page.locator('#send-estimate')).toBeDisabled();
+});

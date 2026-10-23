@@ -3,8 +3,10 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createInquiryHandler } from "./inquiry.mjs";
+import { createEstimateHttpHandler } from "./estimate-intake.mjs";
 const root = path.resolve(fileURLToPath(new URL("../dist/", import.meta.url)));
 const inquiry = createInquiryHandler();
+const estimateRequest = createEstimateHttpHandler();
 export function createServer() {
   return http.createServer(async (req, res) => {
     const json = (status, body) => {
@@ -23,6 +25,7 @@ export function createServer() {
     );
     try {
       const url = new URL(req.url, "http://localhost");
+      if (url.pathname === "/api/estimate-requests") return estimateRequest(req, res);
       if (url.pathname === "/api/inquiries") {
         if (req.method !== "POST") {
           res.setHeader("Allow", "POST");

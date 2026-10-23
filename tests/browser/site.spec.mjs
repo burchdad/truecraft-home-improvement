@@ -93,21 +93,22 @@ test("mobile menu keyboard, filters, service preselection and safe local form", 
     if (r.method() === "POST") posts++;
   });
   await page.getByRole("button", { name: "Check details locally" }).click();
-  await expect(page.locator("#error-summary")).toBeFocused();
+  await expect(page.locator("#estimate-errors")).toBeFocused();
   await expect(page.locator("#name")).toHaveAttribute("aria-invalid", "true");
   await page.getByLabel("Your name").fill("Synthetic test");
-  await page.getByLabel("Preferred contact method").selectOption("email");
+  await page.getByLabel("How should TrueCraft contact you?").selectOption("email");
   await page.getByLabel("Email address").fill("test@example.invalid");
-  await page.getByLabel("Town or ZIP").fill("Frankston");
+  await page.getByLabel("Project town or ZIP").fill("Frankston");
   await page
-    .getByLabel("Tell us about your project")
+    .getByLabel("Describe your project")
     .fill("Synthetic local validation only.");
+  await page.getByLabel(/I agree to share/).check();
   await page.getByRole("button", { name: "Check details locally" }).dblclick();
   await expect(page.getByRole("status")).toContainText(
     "Nothing was sent or saved",
   );
   await expect(
-    page.getByRole("button", { name: "Sending unavailable" }),
+    page.getByRole("button", { name: "Online sending unavailable" }),
   ).toBeDisabled();
   await expect(page.getByLabel("Your name")).toHaveValue("Synthetic test");
   expect(posts).toBe(0);
@@ -139,10 +140,10 @@ test("narrow landscape, enlarged text and script failure", async ({
     viewport: { width: 390, height: 844 },
   });
   const nojs = await context.newPage();
-  await nojs.goto("http://127.0.0.1:4173/request-estimate/");
+  await nojs.goto(new URL("/request-estimate/", test.info().project.use.baseURL).href);
   await expect(nojs.locator("#main-nav")).toBeVisible();
   await expect(
-    nojs.getByRole("button", { name: "Sending unavailable" }),
+    nojs.getByRole("button", { name: "Online sending unavailable" }),
   ).toBeDisabled();
   await expect(
     nojs.locator('a[href="tel:+19032750361"]').first(),

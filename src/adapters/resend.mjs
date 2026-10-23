@@ -44,6 +44,9 @@ export function renderInquiryNotification({ leadId, data, from, to }) {
     ["Town or ZIP", inquiry.location],
     ["Project type", services.find((s) => s.id === inquiry.project).name],
     ["Ideal timeframe", inquiry.timeframe || "Not supplied"],
+    ["Approximate dimensions", typeof data.dimensions === "string" ? data.dimensions.slice(0,200) : "Not supplied"],
+    ["Consent to respond", data.consent === "yes" ? "Agreed to share details with TrueCraft for responding" : "Not recorded"],
+    ["Pricing", "Details only. No price calculated; Bo provides pricing separately. No booking confirmed."],
     ["Project description", inquiry.description],
   ];
   return {

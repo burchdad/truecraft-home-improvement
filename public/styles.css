@@ -1283,3 +1283,8 @@ footer {
 .project-set { margin-block: 2.5rem 4rem; }
 .work-gallery .photo-link { background: #e9e5dd; }
 .work-gallery .photo-link img { object-fit: contain; }
+
+.consent-field { margin-top: 1.5rem; }
+.consent-field label { display: flex; align-items: flex-start; gap: .75rem; font-weight: 400; }
+.consent-field input[type="checkbox"] { width: 1.25rem; min-width: 1.25rem; height: 1.25rem; margin-top: .15rem; padding: 0; }
+#estimate-status { margin-top: 1rem; }

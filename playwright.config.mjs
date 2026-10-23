@@ -4,7 +4,7 @@ export default defineConfig({
   timeout: 60000,
   workers: 2,
   use: {
-    baseURL: "http://127.0.0.1:4173",
+    baseURL: `http://127.0.0.1:${process.env.PORT || 4173}`,
     browserName: "chromium",
     launchOptions: {
       executablePath: process.env.CHROMIUM_PATH || "/usr/bin/chromium",
@@ -13,7 +13,7 @@ export default defineConfig({
   },
   webServer: {
     command: "npm start",
-    url: "http://127.0.0.1:4173",
+    url: `http://127.0.0.1:${process.env.PORT || 4173}`,
     reuseExistingServer: true,
   },
   reporter: "list",

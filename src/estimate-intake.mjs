@@ -24,10 +24,10 @@ export function createEstimateIntake({enabled=false,origin,store,limiter,notifie
    if(record.durable!==true||!record.id)return unavailable();
    if(record.notification==='submitted')return accepted(record.id);
    if(!record.claimed)return {status:409,body:{accepted:false,message:'Request is processing. Please wait before retrying.'}};
-   if(now()-record.createdAt>=23*60*60*1000){await store.recordOutcome(record.id,{status:'needs_reconciliation'});return unavailable();}
-   const outcome=await notifier.notify({leadId:record.id,data:record.data});
+   if(now()-record.createdAt>=23*60*60*1000){await store.recordOutcome(record.id,{status:'needs_reconciliation'},record.leaseToken);return unavailable();}
+   const outcome=await notifier.notify({leadId:record.id,data:record.data,frozenPayload:record.payload});
    // A durable audit result is required before any browser success response.
-   await store.recordOutcome(record.id,outcome);
+   await store.recordOutcome(record.id,outcome,record.leaseToken);
    if(outcome.status==='submitted'&&outcome.providerId)return accepted(record.id);
    return {status:503,body:{accepted:false,message:'Request recorded, but email submission is unconfirmed. Please call (903) 275-0361.'}};
   }catch{return {status:503,body:{accepted:false,message:'We could not confirm submission. Please call (903) 275-0361.'}};}
@@ -46,7 +46,9 @@ export function createEstimateHttpHandler({intake=createEstimateIntake(),clientI
   let raw='',bytes=0;
   try{for await(const chunk of req){bytes+=Buffer.byteLength(chunk);if(bytes>12000)return reply(413,{accepted:false});raw+=chunk;}}catch{return reply(400,{accepted:false});}
   let body;try{body=JSON.parse(raw);}catch{return reply(400,{accepted:false});}
-  const result=await intake({body,requestOrigin:req.headers.origin,key:req.headers['idempotency-key'],clientId:clientId(req)});
-  return reply(result.status,result.body);
+  try {
+   const result=await intake({body,requestOrigin:req.headers.origin,key:req.headers['idempotency-key'],clientId:clientId(req)});
+   return reply(result.status,result.body);
+  } catch { return reply(503,{accepted:false,message:'Submission unavailable. Please call (903) 275-0361.'}); }
  };
 }

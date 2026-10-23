@@ -1,5 +1,7 @@
 # Details-only estimate request — local review
 
+Update: concrete PostgreSQL/outbox adapters now exist on the subsequent local review branch. See [ESTIMATE-DURABILITY-REVIEW.md](ESTIMATE-DURABILITY-REVIEW.md) for current implementation, configuration needs and verification limits. The integration requirements below describe the original intake milestone.
+
 ## Implemented
 
 The nonproduction estimate page now contains a responsive, accessible details-only form: name, selected phone/email contact, town or ZIP, project type, description, optional dimensions/timing, and explicit permission to share details with TrueCraft for responding. No prices, uploads, full street address, marketing signup or booking claim. Phone alternative remains visible. Preview privacy text accurately says nothing is sent or saved.

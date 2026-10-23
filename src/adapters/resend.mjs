@@ -102,7 +102,11 @@ export class ResendInquiryAdapter {
     this.now = now;
   }
 
-  async notify({ leadId, data } = {}) {
+  prepare({leadId,data}) {
+    return renderInquiryNotification({leadId,data,from:this.from,to:this.to});
+  }
+
+  async notify({ leadId, data, frozenPayload } = {}) {
     if (!this.enabled) return outcome("disabled", { retryable: false });
     if (
       typeof this.apiKey !== "string" ||
@@ -121,6 +125,18 @@ export class ResendInquiryAdapter {
         from: this.from,
         to: this.to,
       });
+      // Only the durable server outbox supplies this field; never map it from
+      // request input. Preserve the original envelope across code/config changes.
+      if (frozenPayload) {
+        if (frozenPayload.subject !== `TrueCraft inquiry ${leadId}` ||
+            JSON.stringify(frozenPayload.to) !== JSON.stringify([this.to]) ||
+            !/^TrueCraft inquiries <[^<>\r\n]+>$/.test(frozenPayload.from || '') ||
+            !mailbox(frozenPayload.from.slice("TrueCraft inquiries <".length,-1)) ||
+            typeof frozenPayload.text !== 'string' || typeof frozenPayload.html !== 'string' ||
+            (frozenPayload.reply_to && !mailbox(frozenPayload.reply_to)) ||
+            Object.keys(frozenPayload).some(k=>!['from','to','subject','text','html','reply_to'].includes(k))) throw Error('Invalid stored envelope');
+        payload = frozenPayload;
+      }
     } catch {
       return outcome("invalid_input", { retryable: false });
     }

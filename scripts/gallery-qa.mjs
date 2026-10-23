@@ -15,11 +15,18 @@ for(const width of [390,1440]){
   assert(await page.locator('a[href="tel:+19032750361"]').count());
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   for(const img of await page.locator('img').all()){await img.scrollIntoViewIfNeeded();await img.evaluate(i=>i.decode());assert(await img.evaluate(i=>i.naturalWidth>0));}
+  assert.equal(await page.locator('img[src="/images/front-porch.jpg"]').count(),0);
+  if(['/', '/services/', '/our-work/'].includes(route)) {
+   assert.equal(await page.locator('img[src="/images/elevated-covered-front-porch.jpg"]').count(),route==='/'?2:1);
+   const porch=page.locator('img[src="/images/elevated-covered-front-porch.jpg"]').first();
+   await porch.scrollIntoViewIfNeeded();
+   await page.screenshot({path:`${output}/porch-${route==='/'?'home':route.split('/')[1]}-${width}.png`});
+  }
   if(route==='/our-work/'){
-   assert.equal(await page.locator('figure[data-category]').count(),17);
+   assert.equal(await page.locator('figure[data-category]').count(),16);
    for(const a of await page.locator('.photo-link').all())assert.equal((await page.request.get(new URL(await a.getAttribute('href'),origin).href)).status(),200);
    await page.getByRole('button',{name:'Outdoors',exact:true}).click();
-   assert.equal(await page.locator('figure[data-category]:visible').count(),5);
+   assert.equal(await page.locator('figure[data-category]:visible').count(),4);
    assert.equal(await page.locator('.project-set').first().isVisible(),false);
    await page.getByRole('button',{name:'Interiors',exact:true}).click();assert.equal(await page.locator('figure[data-category]:visible').count(),12);
    await page.getByRole('button',{name:'All photographs',exact:true}).click();
@@ -30,4 +37,4 @@ for(const width of [390,1440]){
  }
  await page.close();
 }
-await browser.close();console.log('PASS: six production routes at 390/1440; 17 images, full-image links, filters 5/12/17, no overflow, canonical/indexability, call-only.');
+await browser.close();console.log('PASS: six production routes at 390/1440; 16 images, full-image links, filters 4/12/16, no overflow, canonical/indexability, call-only.');

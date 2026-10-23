@@ -23,7 +23,7 @@ export const services = [
   {
     id: "exteriors",
     name: "Outdoor projects",
-    photo: 19,
+    photo: 23,
     copy: "Explore possibilities for your porch, decking, wood staining or fencing. Share your ideas and the space you have in mind.",
   },
   {
@@ -50,7 +50,7 @@ export const roomProject = [
 ];
 export const projects = [
   { id: 22, title: "Porch with brick base", category: "Outdoors" },
-  { id: 23, title: "Elevated covered porch", category: "Outdoors" },
+  { id: 23, title: "Raised wooden porch", category: "Outdoors", description: "A raised covered wood porch with railings, exposed posts and stairs at the left." },
   { id: 24, title: "Dining room trim", category: "Interiors" },
   { id: 25, title: "Wood-cabinet kitchen", category: "Interiors" },
   {
@@ -59,13 +59,6 @@ export const projects = [
     category: "Interiors",
     description:
       "A tub, tiled shower and patterned floor, shown together in one room.",
-  },
-  {
-    id: 19,
-    title: "Wood porch",
-    category: "Outdoors",
-    description:
-      "A covered wood porch with central steps and open views of the yard.",
   },
   { id: 4, title: "Living room", category: "Interiors" },
   {
@@ -87,7 +80,7 @@ export const projects = [
   { id: 17, title: "Double vanity", category: "Interiors" },
   { id: 7, title: "Enclosed room", category: "Interiors" },
 ];
-export const featuredProjects = [15, 1, 19, 11].map((id) =>
+export const featuredProjects = [15, 1, 23, 11].map((id) =>
   projects.find((p) => p.id === id),
 );
 export const serviceGroups = services.filter((s) => s.id !== "other");

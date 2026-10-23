@@ -81,9 +81,9 @@ test("mobile menu keyboard, filters, service preselection and safe local form", 
   await expect(menu).toHaveAttribute("aria-expanded", "false");
   await page.goto("/our-work/");
   await page.getByRole("button", { name: "Outdoors", exact: true }).click();
-  await expect(page.locator("[data-category]:visible")).toHaveCount(5);
+  await expect(page.locator("[data-category]:visible")).toHaveCount(4);
   await page.getByRole("button", { name: "All photographs" }).click();
-  await expect(page.locator("[data-category]:visible")).toHaveCount(17);
+  await expect(page.locator("[data-category]:visible")).toHaveCount(16);
   await page.goto("/services/");
   await page
     .locator("#interiors")

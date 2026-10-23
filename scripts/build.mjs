@@ -36,3 +36,5 @@ if (siteUrl)
 console.log(
   `Built ${routes.length} pages + 404. ${production ? "Indexable; call-only contact." : "Noindex on; inquiry sending disabled."} ${siteUrl ? "Canonical and sitemap generated." : "Canonical and sitemap await approved SITE_URL."}`,
 );
+
+if(!production){await fs.mkdir('dist/verification-check',{recursive:true});await fs.writeFile('dist/verification-check/index.html','<!doctype html><html lang="en"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Browser verification check</title><h1>Browser protection check</h1><p>This check sends no email and collects no project details. Vercel processes browser signals for abuse protection.</p><button id="check-botid">Check browser protection</button><p id="botid-result" role="status"></p><script type="module" src="/email-only-botid.js"></script></html>');}

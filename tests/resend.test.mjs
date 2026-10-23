@@ -62,7 +62,7 @@ test("mocked request matches Resend REST contract and never reports delivery or 
   const body = JSON.parse(request.body);
   assert.deepEqual(body.to, [config.to]);
   assert.equal(body.reply_to, data.contact);
-  assert.equal(body.from, `TrueCraft inquiries <${config.from}>`);
+  assert.equal(body.from, `Truecraft Website <${config.from}>`);
   assert.match(body.text, /Source page: \/request-estimate\//);
   assert.match(body.text, /Ideal timeframe: Not supplied/);
   assert.match(body.subject, new RegExp(lead.leadId));

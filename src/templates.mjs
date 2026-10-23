@@ -4,6 +4,7 @@ import {
   services,
   serviceGroups,
   featuredProjects,
+  roomProject,
   reviews,
   projects,
   routes,
@@ -63,7 +64,7 @@ function servicesPage() {
   return `${intro("WHAT WE DO", "Make more of your Tyler home.", "Kitchen and bathroom updates, interior improvements, and outdoor projects serving Tyler and surrounding East Texas communities.")}<div class="wrap services-list">${serviceGroups.map((s, i) => `<section id="${s.id}" class="service-row"><div class="service-photo">${photo(s.photo)}</div><div><p class="eyebrow">0${i + 1} / OUR SERVICES</p><h2>${s.name}</h2><p class="lead">${s.copy}</p>${cta("Discuss your project", s.id)}</div></section>`).join("")}</div><section class="wrap other-project"><h2>Something else in mind?</h2><p>Describe your home improvement or repair idea so we can discuss whether it is a fit.</p>${cta("Discuss another project", "other")}</section>${contactBanner()}`;
 }
 function work() {
-  return `${intro("THE TRUECRAFT GALLERY", "Take a closer look.", "Explore the details, inside and out. A selection of genuine photographs supplied by TrueCraft.")}<section class="wrap work-gallery" aria-label="Project photographs">${gallery(projects, true)}<p class="fine gallery-note">Photographs are presented by subject. Select a photograph to view it in full.</p></section>${contactBanner()}`;
+  return `${intro("THE TRUECRAFT GALLERY", "Take a closer look.", "Explore the details, inside and out. A selection of genuine photographs supplied by TrueCraft.")}<section class="wrap work-gallery" aria-label="Project photographs">${gallery([], true)}<section class="project-set" aria-labelledby="room-project-heading"><div class="section-heading"><div><p class="eyebrow">PROJECT GALLERY</p><h2 id="room-project-heading">White paneling &amp; staircase</h2></div><p>Three views from one project: room details, paneling and stairs.</p></div>${gallery(roomProject)}</section><section class="project-set" aria-labelledby="more-work-heading"><div class="section-heading"><div><p class="eyebrow">MORE TRUECRAFT WORK</p><h2 id="more-work-heading">Inside &amp; out</h2></div><p>Porches, kitchens and interior details, collected by subject.</p></div>${gallery(projects)}</section><p class="fine gallery-note">Select a photograph to view it in full. Subject collections do not imply that photographs show the same project.</p></section>${contactBanner()}`;
 }
 function about() {
   return `${intro("SERVING TYLER &amp; EAST TEXAS. ESTABLISHED 2021.", "Home is in the details.", "TrueCraft Home Improvements LLC serves Tyler and surrounding East Texas communities with interior and exterior home improvements. Based in Frankston, Texas.")}<section class="wrap about-section"><div>${photo(7, { hero: true })}</div><div><p class="eyebrow">GET TO KNOW TRUECRAFT</p><h2>A local starting point for your next project.</h2><p>Our work spans kitchens and bathrooms, interior improvements, and outdoor projects including fencing.</p><p>Whether you have a particular update in mind or are still exploring the possibilities, start by sharing what you would like to change.</p><p>Browse the gallery for a closer look at the photographs, then call to discuss your project and location.</p>${cta()}<p class="fine">Based in Frankston, Texas. Call to discuss availability for your location.</p></div></section>${proof()}${contactBanner()}`;

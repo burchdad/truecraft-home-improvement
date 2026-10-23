@@ -1,0 +1,53 @@
+{
+  "selected": [
+    {
+      "filename": "covered-front-porch-brick-base.png",
+      "sha256": "a495bb75b72306d90659ba3a8d65fa242ec474f87f2fff67f92682921aa43aa7",
+      "slug": "covered-front-porch-brick-base",
+      "source": "Owner-provided TrueCraft project photograph"
+    },
+    {
+      "filename": "elevated-covered-front-porch.png",
+      "sha256": "72dbbac063752f8c8deae2cf10e70dd711a22c82b5452cfc0bb3eee9e67a1bf2",
+      "slug": "elevated-covered-front-porch",
+      "source": "Owner-provided TrueCraft project photograph"
+    },
+    {
+      "filename": "dining-room-trim.png",
+      "sha256": "e0ef930373e3e9cf518f54d1a4279e2d00ba3b10dc83aa0e72e928dff23aa6e9",
+      "slug": "dining-room-trim",
+      "source": "Owner-provided TrueCraft project photograph"
+    },
+    {
+      "filename": "wood-cabinet-kitchen.png",
+      "sha256": "f28c9fb863fd51223edd3c5dbe041d7b5d99cd4865640d1639de9e1f2c582671",
+      "slug": "wood-cabinet-kitchen",
+      "source": "Owner-provided TrueCraft project photograph"
+    },
+    {
+      "filename": "white-paneled-room-metal-ceiling.jpg",
+      "sha256": "b30221066cdfe54d459bf4cbde034278bd09ff990776511f58e42077b1f760d8",
+      "slug": "white-paneled-room-metal-ceiling",
+      "source": "https://www.facebook.com/photo.php?fbid=1785175370274683"
+    },
+    {
+      "filename": "interior-staircase.jpg",
+      "sha256": "99a6dfbd8e587e0fd125e43e0dda4adf3aa8a44e45013239a51117c84ad63ad8",
+      "slug": "interior-staircase",
+      "source": "https://www.facebook.com/photo.php?fbid=1785175723607981"
+    },
+    {
+      "filename": "white-paneled-room-alternate.jpg",
+      "sha256": "898af8bc2f2d2e42f10374c55646a43d00a8203ca167f3c49276fb90e4c135c7",
+      "slug": "white-paneled-room-alternate",
+      "source": "https://www.facebook.com/photo.php?fbid=1785175773607976"
+    }
+  ],
+  "omitted": [
+    {
+      "filename": "wood-lined-enclosed-porch.png",
+      "reason": "Same photograph as existing enclosed-room; retained existing higher-resolution asset."
+    }
+  ],
+  "grouping": "The three white-paneled room and staircase images share one business-gallery post. Other images are grouped by subject only."
+}

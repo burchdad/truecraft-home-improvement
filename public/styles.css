@@ -1277,3 +1277,9 @@ footer {
     letter-spacing: 1.5px;
   }
 }
+
+/* Keep the complete project photographs visible in the work gallery. */
+.work-gallery .gallery:empty { display: none; }
+.project-set { margin-block: 2.5rem 4rem; }
+.work-gallery .photo-link { background: #e9e5dd; }
+.work-gallery .photo-link img { object-fit: contain; }

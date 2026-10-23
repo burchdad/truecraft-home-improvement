@@ -5,7 +5,11 @@
     "width": 1086,
     "height": 1448,
     "alt": "Wood-paneled interior with white door trim and ceiling beams.",
-    "widths": [480, 960, 1086]
+    "widths": [
+      480,
+      960,
+      1086
+    ]
   },
   {
     "id": 4,
@@ -13,7 +17,11 @@
     "width": 2048,
     "height": 1536,
     "alt": "Wide view of living room with fireplace and built-in shelves.",
-    "widths": [480, 960, 1600]
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
   {
     "id": 7,
@@ -21,7 +29,11 @@
     "width": 1536,
     "height": 2048,
     "alt": "Wood-lined enclosed room with ceiling fans and large windows.",
-    "widths": [480, 960, 1536]
+    "widths": [
+      480,
+      960,
+      1536
+    ]
   },
   {
     "id": 8,
@@ -29,7 +41,11 @@
     "width": 2048,
     "height": 1152,
     "alt": "Rear house enclosure with metal roof beside a swimming pool.",
-    "widths": [480, 960, 1600]
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
   {
     "id": 10,
@@ -37,7 +53,10 @@
     "width": 720,
     "height": 960,
     "alt": "Kitchen with white cabinets, island, patterned counters and wood-look flooring.",
-    "widths": [480, 720]
+    "widths": [
+      480,
+      720
+    ]
   },
   {
     "id": 11,
@@ -45,7 +64,11 @@
     "width": 2048,
     "height": 1536,
     "alt": "Blue-walled garage with speckled floor and geometric ceiling lighting.",
-    "widths": [480, 960, 1600]
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
   {
     "id": 12,
@@ -53,7 +76,11 @@
     "width": 2048,
     "height": 1536,
     "alt": "Wood privacy fence along a residential yard.",
-    "widths": [480, 960, 1600]
+    "widths": [
+      480,
+      960,
+      1600
+    ]
   },
   {
     "id": 15,
@@ -61,7 +88,11 @@
     "width": 1536,
     "height": 2048,
     "alt": "Bathroom with tub, tiled walk-in shower and polished tile flooring.",
-    "widths": [480, 960, 1536]
+    "widths": [
+      480,
+      960,
+      1536
+    ]
   },
   {
     "id": 17,
@@ -69,7 +100,11 @@
     "width": 1536,
     "height": 2048,
     "alt": "Double-sink bathroom vanity with white cabinets and tiled floor.",
-    "widths": [480, 960, 1536]
+    "widths": [
+      480,
+      960,
+      1536
+    ]
   },
   {
     "id": 19,
@@ -77,6 +112,90 @@
     "width": 1536,
     "height": 2048,
     "alt": "Front view of a wood porch with central steps and an overhead cover.",
-    "widths": [480, 960, 1536]
+    "widths": [
+      480,
+      960,
+      1536
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "covered-front-porch-brick-base",
+    "width": 641,
+    "height": 920,
+    "alt": "Covered wood porch with railings, side steps and a brick base in front of gray siding.",
+    "widths": [
+      480,
+      641
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "elevated-covered-front-porch",
+    "width": 641,
+    "height": 862,
+    "alt": "Elevated covered wood porch with exposed posts, railings and stairs at the left.",
+    "widths": [
+      480,
+      641
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "dining-room-trim",
+    "width": 874,
+    "height": 1168,
+    "alt": "Dining room with a vaulted ceiling, white crown molding and an arched opening.",
+    "widths": [
+      480,
+      874
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "wood-cabinet-kitchen",
+    "width": 874,
+    "height": 1167,
+    "alt": "Kitchen with wood cabinets, an island, patterned countertops and diagonal floor tiles.",
+    "widths": [
+      480,
+      874
+    ]
+  },
+  {
+    "id": 26,
+    "slug": "white-paneled-room-metal-ceiling",
+    "width": 1448,
+    "height": 1086,
+    "alt": "White-paneled room with glazed double doors, exposed wood beams and a corrugated metal ceiling.",
+    "widths": [
+      480,
+      960,
+      1448
+    ]
+  },
+  {
+    "id": 27,
+    "slug": "interior-staircase",
+    "width": 1086,
+    "height": 1448,
+    "alt": "Wood staircase bordered by white horizontal paneling beside corrugated metal walls.",
+    "widths": [
+      480,
+      960,
+      1086
+    ]
+  },
+  {
+    "id": 28,
+    "slug": "white-paneled-room-alternate",
+    "width": 1536,
+    "height": 2048,
+    "alt": "Alternate room view showing white paneling, windows, exposed beams and a metal ceiling.",
+    "widths": [
+      480,
+      960,
+      1536
+    ]
   }
 ]

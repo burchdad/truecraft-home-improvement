@@ -43,7 +43,16 @@ export const reviews = [
     name: "Larry Harper",
   },
 ];
+export const roomProject = [
+  { id: 26, title: "White-paneled room", category: "Interiors" },
+  { id: 27, title: "Staircase details", category: "Interiors" },
+  { id: 28, title: "Another room view", category: "Interiors" },
+];
 export const projects = [
+  { id: 22, title: "Porch with brick base", category: "Outdoors" },
+  { id: 23, title: "Elevated covered porch", category: "Outdoors" },
+  { id: 24, title: "Dining room trim", category: "Interiors" },
+  { id: 25, title: "Wood-cabinet kitchen", category: "Interiors" },
   {
     id: 15,
     title: "Bathroom",

@@ -1,0 +1,113 @@
+{
+  "assets": [
+    {
+      "filename": "covered-front-porch-brick-base.png",
+      "width": 641,
+      "height": 920,
+      "sha256": "a495bb75b72306d90659ba3a8d65fa242ec474f87f2fff67f92682921aa43aa7",
+      "crop_box": [
+        42,
+        600,
+        683,
+        1520
+      ],
+      "source": "Owner-provided TrueCraft project photograph",
+      "group": "Exterior porches",
+      "method": "Exact pixel crop; no generative editing"
+    },
+    {
+      "filename": "elevated-covered-front-porch.png",
+      "width": 641,
+      "height": 862,
+      "sha256": "72dbbac063752f8c8deae2cf10e70dd711a22c82b5452cfc0bb3eee9e67a1bf2",
+      "crop_box": [
+        42,
+        878,
+        683,
+        1740
+      ],
+      "source": "Owner-provided TrueCraft project photograph",
+      "group": "Exterior porches",
+      "method": "Exact pixel crop; no generative editing"
+    },
+    {
+      "filename": "dining-room-trim.png",
+      "width": 874,
+      "height": 1168,
+      "sha256": "e0ef930373e3e9cf518f54d1a4279e2d00ba3b10dc83aa0e72e928dff23aa6e9",
+      "crop_box": [
+        2,
+        415,
+        876,
+        1583
+      ],
+      "source": "Owner-provided TrueCraft project photograph",
+      "group": "Interior finishes",
+      "method": "Exact pixel crop; no generative editing"
+    },
+    {
+      "filename": "wood-cabinet-kitchen.png",
+      "width": 874,
+      "height": 1167,
+      "sha256": "f28c9fb863fd51223edd3c5dbe041d7b5d99cd4865640d1639de9e1f2c582671",
+      "crop_box": [
+        2,
+        415,
+        876,
+        1582
+      ],
+      "source": "Owner-provided TrueCraft project photograph",
+      "group": "Kitchens",
+      "method": "Exact pixel crop; no generative editing"
+    },
+    {
+      "filename": "wood-lined-enclosed-porch.png",
+      "width": 874,
+      "height": 1166,
+      "sha256": "9bce16bc62ea89b3907d1a2f1e60f5bd94fae79170ddb83d18142e2f4227c68f",
+      "crop_box": [
+        2,
+        415,
+        876,
+        1581
+      ],
+      "source": "Owner-provided TrueCraft project photograph",
+      "group": "Enclosed porches",
+      "method": "Exact pixel crop; no generative editing"
+    },
+    {
+      "filename": "white-paneled-room-metal-ceiling.jpg",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "b30221066cdfe54d459bf4cbde034278bd09ff990776511f58e42077b1f760d8",
+      "crop_box": null,
+      "source": "https://www.facebook.com/photo.php?fbid=1785175370274683",
+      "group": "White-paneled room and staircase",
+      "method": "Original business-gallery image; no editing"
+    },
+    {
+      "filename": "interior-staircase.jpg",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "99a6dfbd8e587e0fd125e43e0dda4adf3aa8a44e45013239a51117c84ad63ad8",
+      "crop_box": null,
+      "source": "https://www.facebook.com/photo.php?fbid=1785175723607981",
+      "group": "White-paneled room and staircase",
+      "method": "Original business-gallery image; no editing"
+    },
+    {
+      "filename": "white-paneled-room-alternate.jpg",
+      "width": 1536,
+      "height": 2048,
+      "sha256": "898af8bc2f2d2e42f10374c55646a43d00a8203ca167f3c49276fb90e4c135c7",
+      "crop_box": null,
+      "source": "https://www.facebook.com/photo.php?fbid=1785175773607976",
+      "group": "White-paneled room and staircase",
+      "method": "Original business-gallery image; no editing"
+    }
+  ],
+  "notes": [
+    "Room and staircase images share a single business-gallery project post.",
+    "No project dates, locations, client identities or budget inferred."
+  ]
+}

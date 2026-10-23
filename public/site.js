@@ -41,6 +41,9 @@ if (filters) {
         f.dataset.category !== button.dataset.filter;
       if (!f.hidden) count++;
     });
+    document.querySelectorAll(".project-set").forEach((section) => {
+      section.hidden = !section.querySelector("figure:not([hidden])");
+    });
     document.querySelector("#gallery-status").textContent =
       `${count} photographs shown.`;
   });

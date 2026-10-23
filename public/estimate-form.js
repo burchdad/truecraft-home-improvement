@@ -23,10 +23,10 @@ if(form){
   pending=true;send.disabled=true;const controls=[...form.querySelectorAll('input,select,textarea,#check-estimate')];controls.forEach(c=>c.disabled=true);form.setAttribute('aria-busy','true');status.textContent='Submitting your details…';
   const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),15000);
   try{
-   const response=await fetch('/api/estimate-requests',{method:'POST',headers:{'Content-Type':'application/json','Idempotency-Key':key},body:snapshot,signal:controller.signal});
+   const response=await fetch(form.dataset.endpoint || '/api/estimate-requests',{method:'POST',headers:{'Content-Type':'application/json','Idempotency-Key':key},body:snapshot,signal:controller.signal});
    const result=await response.json();
    if(response.ok&&result.accepted===true&&typeof result.id==='string'&&result.id&&result.notification==='submitted'){
-    confirmed=true;status.textContent='Your request was recorded and accepted by the email service for TrueCraft. Inbox delivery and Bo’s review are not yet confirmed. No price or booking is confirmed.';
+    confirmed=true;status.textContent='Your request was accepted by the email service for TrueCraft. Inbox delivery and Bo’s review are not yet confirmed. No price or booking is confirmed.';
    }else {status.textContent=response.status===429?'Too many attempts. Please wait a minute or call (903) 275-0361.':'We could not confirm email submission. Your details remain here; please call (903) 275-0361. If you retry unchanged details, the same request key will be reused.';}
   }catch{status.textContent='We could not confirm submission. Your details remain here. Please call (903) 275-0361 or retry; do not assume the email arrived.';}
   finally{clearTimeout(timer);pending=false;controls.forEach(c=>c.disabled=false);form.removeAttribute('aria-busy');send.disabled=confirmed;status.focus();}

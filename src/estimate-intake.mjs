@@ -46,7 +46,7 @@ export function createEstimateHttpHandler({intake=createEstimateIntake(),clientI
   if(req.method!=='POST'){res.setHeader('Allow','POST');return reply(405,{accepted:false});}
   if(!/^application\/json(?:;|$)/i.test(req.headers['content-type']||''))return reply(415,{accepted:false});
   let raw='',bytes=0;
-  try{for await(const chunk of req){bytes+=Buffer.byteLength(chunk);if(bytes>12000)return reply(413,{accepted:false});raw+=chunk;}}catch{return reply(400,{accepted:false});}
+  try{if(req.body!==undefined){raw=typeof req.body==='string'?req.body:JSON.stringify(req.body);if(Buffer.byteLength(raw)>12000)return reply(413,{accepted:false});}else{for await(const chunk of req){bytes+=Buffer.byteLength(chunk);if(bytes>12000)return reply(413,{accepted:false});raw+=chunk;}}}catch{return reply(400,{accepted:false});}
   let body;try{body=JSON.parse(raw);}catch{return reply(400,{accepted:false});}
   try {
    const result=await intake({body,requestOrigin:req.headers.origin,key:req.headers['idempotency-key'],clientId:clientId(req)});

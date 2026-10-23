@@ -17,10 +17,16 @@ for(const width of [390,1440]){
   for(const img of await page.locator('img').all()){await img.scrollIntoViewIfNeeded();await img.evaluate(i=>i.decode());assert(await img.evaluate(i=>i.naturalWidth>0));}
   assert.equal(await page.locator('img[src="/images/front-porch.jpg"]').count(),0);
   if(['/', '/services/', '/our-work/'].includes(route)) {
-   assert.equal(await page.locator('img[src="/images/elevated-covered-front-porch.jpg"]').count(),route==='/'?2:1);
+   assert.equal(await page.locator('img[src="/images/elevated-covered-front-porch.jpg"]').count(),1);
    const porch=page.locator('img[src="/images/elevated-covered-front-porch.jpg"]').first();
    await porch.scrollIntoViewIfNeeded();
    await page.screenshot({path:`${output}/porch-${route==='/'?'home':route.split('/')[1]}-${width}.png`});
+  }
+  if(route==='/'){
+   const card=page.locator('.service-card').filter({hasText:'Outdoor projects'});
+   assert.equal(await card.locator('img').getAttribute('src'),'/images/covered-front-porch-brick-base.jpg');
+   await card.scrollIntoViewIfNeeded();
+   await card.screenshot({path:`${output}/outdoor-card-${width}.png`});
   }
   if(route==='/our-work/'){
    assert.equal(await page.locator('figure[data-category]').count(),16);

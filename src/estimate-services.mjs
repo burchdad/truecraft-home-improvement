@@ -12,6 +12,7 @@ import { processEstimateOutbox } from "./estimate-outbox.mjs";
 // The caller owns the private pool and an authenticated platform client ID resolver.
 export function createDurableEstimateServices({
   enabled = false,
+  mode = "verification",
   pool,
   origin,
   hashSecret,
@@ -34,6 +35,7 @@ export function createDurableEstimateServices({
     throw Error("Invalid intake configuration");
   const notifier = createEstimateNotifier({
     enabled: true,
+    mode,
     apiKey,
     from,
     fetchImpl,
@@ -46,6 +48,7 @@ export function createDurableEstimateServices({
   const limiter = new PostgresRateLimiter({ pool, hashSecret, now });
   const intake = createEstimateIntake({
     enabled: true,
+    mode,
     origin,
     store,
     limiter,

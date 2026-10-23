@@ -66,3 +66,11 @@ test('HTTP boundary rejects methods, media types, invalid JSON and oversized req
  assert.equal((await call('POST','application/json','x'.repeat(12001))).status,413);
  const disabled=await call('POST','application/json',JSON.stringify(data));assert.equal(disabled.status,503);assert.equal(disabled.payload.accepted,false);
 });
+test('verification mode sends only to approved personal inbox with approved sender label',async()=>{
+ let payload;const notifier=createEstimateNotifier({enabled:true,mode:'verification',apiKey:'mock-not-a-real-key',from:'truecraft@ghostai.solutions',fetchImpl:async(u,o)=>{payload=JSON.parse(o.body);return new Response(JSON.stringify({id:'mock-verification'}));}});
+ const result=await notifier.notify({leadId:request.key,data:{...data,to:INQUIRY_RECIPIENT}});
+ assert.equal(result.status,'submitted');assert.deepEqual(payload.to,['burchsl4@gmail.com']);assert.equal(payload.from,'Truecraft Website <truecraft@ghostai.solutions>');
+ assert.throws(()=>createEstimateNotifier({mode:'unrecognized'}));
+ const old=notifier.prepare({leadId:request.key,data});const production=createEstimateNotifier({enabled:true,mode:'production',apiKey:'mock-not-a-real-key',from:'truecraft@ghostai.solutions',fetchImpl:async()=>{throw Error('Must not resend test to Bo');}});
+ assert.equal((await production.notify({leadId:request.key,data,frozenPayload:old})).status,'invalid_input');
+});

@@ -2,10 +2,12 @@ import { createHash } from 'node:crypto';
 import { validateEstimateRequest } from '../public/validation.js';
 import { ResendInquiryAdapter } from './adapters/resend.mjs';
 export const INQUIRY_RECIPIENT='Texastruecrafthomes@gmail.com';
+export const VERIFICATION_RECIPIENT='burchsl4@gmail.com';
+export function recipientForMode(mode){if(mode==='verification')return VERIFICATION_RECIPIENT;if(mode==='production')return INQUIRY_RECIPIENT;throw Error('Unknown notification mode');}
 const unavailable=()=>({status:503,body:{accepted:false,message:'Online requests are not enabled. Please call (903) 275-0361.'}});
 // No environment activation. A reviewed production bootstrap must supply durable
 // storage, an atomic shared limiter, verified sender and server-only credentials.
-export function createEstimateIntake({enabled=false,origin,store,limiter,notifier,now=Date.now}={}){
+export function createEstimateIntake({enabled=false,origin,store,limiter,notifier,mode="production",now=Date.now}={}){
  return async ({body,requestOrigin,key,clientId})=>{
   if(!enabled||!store?.durable||!limiter?.shared||!notifier||!origin)return unavailable();
   if(requestOrigin!==origin)return {status:403,body:{accepted:false,message:'Request origin not allowed.'}};
@@ -19,7 +21,7 @@ export function createEstimateIntake({enabled=false,origin,store,limiter,notifie
    const fingerprint=createHash('sha256').update(JSON.stringify(data)).digest('hex');
    // reserve atomically persists validated data, consent version/time and a
    // unique key+fingerprint, and grants only one active processing lease.
-   const record=await store.reserve({key,fingerprint,data,consentVersion:'estimate-request-v1',createdAt:now(),recipient:INQUIRY_RECIPIENT});
+   const record=await store.reserve({key,fingerprint,data,consentVersion:'estimate-request-v1',createdAt:now(),recipient:recipientForMode(mode)});
    if(record.conflict)return {status:409,body:{accepted:false,message:'Request changed. Start a new request.'}};
    if(record.durable!==true||!record.id)return unavailable();
    if(record.notification==='submitted')return accepted(record.id);
@@ -34,9 +36,9 @@ export function createEstimateIntake({enabled=false,origin,store,limiter,notifie
  };
 }
 function accepted(id){return {status:202,body:{accepted:true,id,notification:'submitted',message:'Request recorded and accepted by the email service. Inbox delivery and review are not confirmed. No price or booking is confirmed.'}};}
-export function createEstimateNotifier({enabled=false,apiKey,from,fetchImpl}={}){
+export function createEstimateNotifier({enabled=false,apiKey,from,fetchImpl,mode="production"}={}){
  // Recipient cannot be supplied or overridden by inbound form data.
- return new ResendInquiryAdapter({enabled,apiKey,from,to:INQUIRY_RECIPIENT,fetchImpl});
+ return new ResendInquiryAdapter({enabled,apiKey,from,to:recipientForMode(mode),fetchImpl});
 }
 export function createEstimateHttpHandler({intake=createEstimateIntake(),clientId=()=>null}={}){
  return async (req,res)=>{

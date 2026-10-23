@@ -50,7 +50,7 @@ export function renderInquiryNotification({ leadId, data, from, to }) {
     ["Project description", inquiry.description],
   ];
   return {
-    from: `TrueCraft inquiries <${from}>`,
+    from: `Truecraft Website <${from}>`,
     to: [to],
     subject: `TrueCraft inquiry ${leadId}`,
     // Homeowner-supplied values never control the sender or recipient.
@@ -130,8 +130,8 @@ export class ResendInquiryAdapter {
       if (frozenPayload) {
         if (frozenPayload.subject !== `TrueCraft inquiry ${leadId}` ||
             JSON.stringify(frozenPayload.to) !== JSON.stringify([this.to]) ||
-            !/^TrueCraft inquiries <[^<>\r\n]+>$/.test(frozenPayload.from || '') ||
-            !mailbox(frozenPayload.from.slice("TrueCraft inquiries <".length,-1)) ||
+            !/^Truecraft Website <[^<>\r\n]+>$/.test(frozenPayload.from || '') ||
+            !mailbox(frozenPayload.from.slice("Truecraft Website <".length,-1)) ||
             typeof frozenPayload.text !== 'string' || typeof frozenPayload.html !== 'string' ||
             (frozenPayload.reply_to && !mailbox(frozenPayload.reply_to)) ||
             Object.keys(frozenPayload).some(k=>!['from','to','subject','text','html','reply_to'].includes(k))) throw Error('Invalid stored envelope');

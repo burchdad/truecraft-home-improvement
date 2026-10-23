@@ -48,3 +48,11 @@ Resend's 24-hour provider idempotency window: https://resend.com/docs/dashboard/
 - 13 Playwright browser checks passed across mobile/desktop, keyboard navigation, accessibility, retained failure values and mocked retry behavior.
 - Production HTML is byte-for-byte identical across all six routes to published commit 8f387ae4fcff4d9ed7cf27d83f85c36dcdd46ae4. The remote production branch still points to that SHA.
 - Desktop/mobile intake screenshots reviewed; copies are outside Git in /workspace/truecraft-intake-durable-qa/.
+
+## Setup approval update — October 23, 2026
+
+Approved: a dedicated Neon Free database, a send-only Resend key restricted to ghostai.solutions, and private Vercel configuration for this project. No paid upgrade or new explicit legal agreement is approved. The sender is Truecraft Website <truecraft@ghostai.solutions>.
+
+The first labeled fictional inquiry is approved ONLY to burchsl4@gmail.com. Parent must confirm actual inbox receipt before changing the destination to Texastruecrafthomes@gmail.com. This supersedes the earlier test-recipient instruction above. No test has been sent. The service factory now defaults to verification mode, uses only the two explicit server-side recipient modes, and rejects replay of a frozen verification envelope through the production notifier. Inbound data cannot choose the destination.
+
+Read-only provider catalog confirms Neon product iap_SYm1SIDap0OBqOvV in installation icfg_sc5ze2MvSZaiDqWxO2mQHY9o offers free_v3 (Free; no payment method required). The creation-specific price and legal confirmation must still be checked. This executor has no authenticated browser/provisioning tool for that step. Parent browser handoff: Team Storage → Create Storage → Neon; first check for duplicate truecraft-inquiries, choose a dedicated resource in iad1 with Auth and Realtime off, inspect final Free/$0 price and explicit terms, and stop on unexpected cost or new agreement. Do not reuse store_QPC3JEbDWpdhm54H, store_KDrpyOnIyJKn4CrZ, or store_GL2wCEOSNXZhwgvK. No Blob is required. Return only the new nonsecret resource identifiers and connection metadata; never paste credentials into chat.

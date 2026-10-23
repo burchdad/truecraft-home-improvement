@@ -34,12 +34,9 @@ for (const width of [333, 390]) {
       await expect(menu).toHaveAttribute("aria-expanded", "false");
       await expect(nav).toBeHidden();
       await menu.tap();
-      await nav.getByRole("link", { name: "Request an estimate" }).tap();
-      await expect(page).toHaveURL(/\/request-estimate\/$/);
+      await expect(nav.getByRole("link", { name: "Call TrueCraft for an estimate" })).toHaveAttribute("href", "tel:+19032750361");
+      await menu.tap();
       await expect(menu).toHaveAttribute("aria-expanded", "false");
-      await expect(
-        page.getByRole("button", { name: "Sending unavailable" }),
-      ).toBeDisabled();
     });
 
     test("toggle closes when touch blurs the link before click without focusing the button", async ({

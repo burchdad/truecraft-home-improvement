@@ -85,10 +85,8 @@ test("mobile menu keyboard, filters, service preselection and safe local form", 
   await page.getByRole("button", { name: "All photographs" }).click();
   await expect(page.locator("[data-category]:visible")).toHaveCount(16);
   await page.goto("/services/");
-  await page
-    .locator("#interiors")
-    .getByRole("link", { name: "Discuss your project" })
-    .click();
+  await expect(page.locator("#interiors").getByRole("link", { name: "Call to discuss your project" })).toHaveAttribute("href", "tel:+19032750361");
+  await page.goto("/request-estimate/?project=interiors");
   await expect(page.locator("#project")).toHaveValue("interiors");
   let posts = 0;
   page.on("request", (r) => {

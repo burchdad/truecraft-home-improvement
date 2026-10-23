@@ -107,8 +107,8 @@ export const routes = [
   ],
   [
     "/request-estimate/",
-    "Request an Estimate",
-    "Plan your Tyler or East Texas home improvement project with TrueCraft. Call (903) 275-0361 or explore the preview estimate form.",
+    "Plan Your Estimate",
+    "Plan your Tyler or East Texas home improvement project with TrueCraft. Call (903) 275-0361 and learn what to discuss about your project.",
   ],
   [
     "/privacy/",

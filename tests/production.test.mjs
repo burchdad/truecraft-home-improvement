@@ -20,3 +20,15 @@ test('default preview retains noindex and disconnected form',()=>{
  assert.match(html,/PRIVATE DESIGN PREVIEW/);
  assert.match(html,/Sending unavailable/);
 });
+test('estimate actions call directly and planning remains secondary', () => {
+ for (const path of ['/', '/services/', '/our-work/', '/about/', '/request-estimate/']) {
+  const html=render(path,{production:true,siteUrl});
+  assert.doesNotMatch(html,/Prefer to talk|Request an estimate|<form/);
+  assert.match(html, /class="button" href="tel:\+19032750361">Call/);
+  assert.doesNotMatch(html, /class="button" href="\/request-estimate\//);
+ }
+ const home=render('/',{production:true,siteUrl});
+ assert.match(home,/class="service-card" href="tel:\+19032750361"/);
+ assert.match(home,/href="\/request-estimate\/">Plan your call/);
+ assert.match(render('/request-estimate/',{production:true,siteUrl}),/What to have in mind/);
+});

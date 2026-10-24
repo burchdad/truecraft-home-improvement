@@ -81,9 +81,9 @@ test("mobile menu keyboard, filters, service preselection and safe local form", 
   await expect(menu).toHaveAttribute("aria-expanded", "false");
   await page.goto("/our-work/");
   await page.getByRole("button", { name: "Outdoors", exact: true }).click();
-  await expect(page.locator("[data-category]:visible")).toHaveCount(4);
+  await expect(page.locator("[data-category]:visible")).toHaveCount(7);
   await page.getByRole("button", { name: "All photographs" }).click();
-  await expect(page.locator("[data-category]:visible")).toHaveCount(16);
+  await expect(page.locator("[data-category]:visible")).toHaveCount(18);
   await page.goto("/services/");
   await expect(page.locator("#interiors").getByRole("link", { name: "Call to discuss your project" })).toHaveAttribute("href", "tel:+19032750361");
   await page.goto("/request-estimate/?project=interiors");

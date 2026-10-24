@@ -46,9 +46,11 @@ export const reviews = [
 export const roomProject = [
   { id: 26, title: "White-paneled room", category: "Interiors" },
   { id: 27, title: "Staircase details", category: "Interiors" },
-  { id: 28, title: "Another room view", category: "Interiors" },
 ];
 export const projects = [
+  { id: 29, title: "Covered patio details", category: "Outdoors", description: "Wood ceiling, fans, recessed lights and seating beneath a patio cover." },
+  { id: 30, title: "Covered patio overview", category: "Outdoors", description: "The covered seating area viewed across a swimming pool. The pool is shown for context." },
+  { id: 31, title: "Wood deck & stairs", category: "Outdoors", description: "An elevated view of wood decking, steps, railings and exposed framing." },
   { id: 22, title: "Porch with brick base", category: "Outdoors" },
   { id: 23, title: "Raised wooden porch", category: "Outdoors", description: "A raised covered wood porch with railings, exposed posts and stairs at the left." },
   { id: 24, title: "Dining room trim", category: "Interiors" },

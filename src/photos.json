@@ -85,13 +85,12 @@
   {
     "id": 15,
     "slug": "bathroom",
-    "width": 1536,
-    "height": 2048,
-    "alt": "Bathroom with tub, tiled walk-in shower and polished tile flooring.",
+    "width": 647,
+    "height": 878,
+    "alt": "Bright bathroom with a tub, marble-patterned tiled shower walls, pebble shower floor and polished floor tiles.",
     "widths": [
       480,
-      960,
-      1536
+      647
     ]
   },
   {
@@ -196,6 +195,39 @@
       480,
       960,
       1536
+    ]
+  },
+  {
+    "id": 29,
+    "slug": "covered-patio-detail-bo",
+    "width": 700,
+    "height": 1284,
+    "alt": "Covered patio with a wood ceiling, ceiling fans, recessed lights, seating and a picnic table.",
+    "widths": [
+      480,
+      700
+    ]
+  },
+  {
+    "id": 30,
+    "slug": "poolside-covered-patio-bo",
+    "width": 700,
+    "height": 950,
+    "alt": "Covered patio with seating and a picnic table, viewed across a swimming pool.",
+    "widths": [
+      480,
+      700
+    ]
+  },
+  {
+    "id": 31,
+    "slug": "wood-deck-stairs-bo",
+    "width": 700,
+    "height": 950,
+    "alt": "Raised wood deck with stairs, railings and exposed wood framing, viewed from above.",
+    "widths": [
+      480,
+      700
     ]
   }
 ]

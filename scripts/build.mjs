@@ -1,8 +1,11 @@
+import {emailOnlyConfig} from '../src/email-only-config.mjs';
 import {build} from "esbuild";
 import fs from "node:fs/promises";
 import { routes } from "../src/content.mjs";
 import { render } from "../src/templates.mjs";
-const emailVerification=process.env.VERCEL_ENV === "preview" && process.env.TRUECRAFT_EMAIL_ONLY_VERIFICATION === "true";
+const intakeConfig=emailOnlyConfig(process.env);
+const emailVerification=intakeConfig.enabled && intakeConfig.mode === "verification";
+const emailIntake=intakeConfig.enabled && intakeConfig.mode === "production";
 const production = process.env.VERCEL_ENV === "production";
 let siteUrl = process.env.SITE_URL || (production ? "https://truecraft-home-improvements.vercel.app" : undefined);
 if (production && !siteUrl) throw Error("Production requires SITE_URL");
@@ -23,7 +26,7 @@ await fs.cp("public", "dist", { recursive: true });
 await build({entryPoints:["public/email-only-botid-entry.js"],outfile:"dist/email-only-botid.js",bundle:true,format:"esm",minify:true});
 for (const [path] of routes) {
   await fs.mkdir(`dist${path}`, { recursive: true });
-  await fs.writeFile(`dist${path}index.html`, render(path, { siteUrl, production, emailVerification }));
+  await fs.writeFile(`dist${path}index.html`, render(path, { siteUrl, production, emailVerification, emailIntake }));
 }
 await fs.writeFile("dist/404.html", render("/404/", { siteUrl, production }));
 await fs.writeFile("dist/robots.txt", production ? `User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n` : "User-agent: *\nDisallow: /\n");
@@ -34,7 +37,7 @@ if (siteUrl)
     `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${routes.map(([path]) => `<url><loc>${siteUrl}${path}</loc></url>`).join("")}</urlset>`,
   );
 console.log(
-  `Built ${routes.length} pages + 404. ${production ? "Indexable; call-only contact." : "Noindex on; inquiry sending disabled."} ${siteUrl ? "Canonical and sitemap generated." : "Canonical and sitemap await approved SITE_URL."}`,
+  `Built ${routes.length} pages + 404. ${production ? "Indexable; intake follows verified configuration." : "Noindex on; inquiry sending disabled."} ${siteUrl ? "Canonical and sitemap generated." : "Canonical and sitemap await approved SITE_URL."}`,
 );
 
 if(!production){await fs.mkdir('dist/verification-check',{recursive:true});await fs.writeFile('dist/verification-check/index.html','<!doctype html><html lang="en"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Browser verification check</title><h1>Browser protection check</h1><p>This check sends no email and collects no project details. Vercel processes browser signals for abuse protection.</p><button id="check-botid">Check browser protection</button><p id="botid-result" role="status"></p><script type="module" src="/email-only-botid.js"></script></html>');}

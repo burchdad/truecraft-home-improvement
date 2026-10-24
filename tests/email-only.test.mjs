@@ -26,3 +26,11 @@ test('Vercel pre-parsed JSON body is bounded and reaches the same validation pat
  await handler({method:'POST',headers:{'content-type':'application/json'},body},res);assert.equal(called,1);assert.equal(status,202);
  await handler({method:'POST',headers:{'content-type':'application/json'},body:{description:'x'.repeat(13000)}},res);assert.equal(called,1);assert.equal(status,413);
 });
+test('production activation requires its own flag and key; verification expires and never changes recipient',async()=>{
+ const {emailOnlyConfig,PUBLIC_ORIGIN}=await import('../src/email-only-config.mjs');
+ const env={VERCEL_ENV:'production',TRUECRAFT_EMAIL_ONLY_VERIFICATION:'true',TRUECRAFT_EMAIL_ONLY_TEST_UNTIL:'9999999999999',TRUECRAFT_RESEND_API_KEY:'mock'};
+ assert.equal(emailOnlyConfig(env).enabled,false);
+ assert.deepEqual(emailOnlyConfig({...env,TRUECRAFT_EMAIL_ONLY_ENABLED:'true'}),{enabled:true,mode:'production',origin:PUBLIC_ORIGIN});
+ assert.equal(emailOnlyConfig({...env,TRUECRAFT_EMAIL_ONLY_ENABLED:'true',TRUECRAFT_RESEND_API_KEY:''}).enabled,false);
+ assert.equal(emailOnlyConfig({...env,VERCEL_ENV:'preview',TRUECRAFT_EMAIL_ONLY_TEST_UNTIL:'100'},100).enabled,false);
+});

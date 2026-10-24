@@ -15,7 +15,7 @@ if(form){
   if(keys.length){const heading=document.createElement('strong');heading.textContent='Please check these details:';summary.append(heading);const list=document.createElement('ul');summary.append(list);for(const name of keys){const control=form.elements[name];if(!control)continue;control.setAttribute('aria-invalid','true');document.getElementById(`${name}-error`).textContent=errors[name];const li=document.createElement('li'),a=document.createElement('a');a.href=`#${name}`;a.textContent=errors[name];li.append(a);list.append(li);}summary.focus();return null;}
   return data;
  }
- check.addEventListener('click',()=>{status.textContent='';if(validate())status.textContent='Details checked locally. Nothing was sent or saved. Call (903) 275-0361 to discuss your project.';});
+ check.addEventListener('click',()=>{status.textContent='';if(validate())status.textContent='Details checked locally. Nothing was sent or saved. Use Send project details to submit, or call (903) 275-0361.';});
  form.addEventListener('submit',async e=>{
   e.preventDefault();if(pending||confirmed)return;status.textContent='';const data=validate();if(!data)return;
   if(form.dataset.submitEnabled!=='true'){status.textContent='Online sending is not enabled. Nothing was sent or saved. Please call (903) 275-0361.';return;}

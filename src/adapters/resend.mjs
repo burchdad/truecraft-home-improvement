@@ -35,38 +35,40 @@ export function renderInquiryNotification({ leadId, data, from, to }) {
   )
     throw new Error("Invalid notification input");
   const inquiry = checked.data;
-  const rows = [
-    ["Inquiry ID", leadId],
-    ["Source page", "/request-estimate/"],
-    ["Name", inquiry.name],
-    ["Preferred contact", inquiry.method === "email" ? "Email" : "Phone call"],
-    ["Contact", inquiry.contact],
-    ["Town or ZIP", inquiry.location],
-    ["Project type", services.find((s) => s.id === inquiry.project).name],
-    ["Ideal timeframe", inquiry.timeframe || "Not supplied"],
-    ["Approximate dimensions", typeof data.dimensions === "string" ? data.dimensions.slice(0,200) : "Not supplied"],
-    ["Consent to respond", data.consent === "yes" ? "Agreed to share details with TrueCraft for responding" : "Not recorded"],
-    ["Pricing", "Details only. No price calculated; Bo provides pricing separately. No booking confirmed."],
-    ["Project description", inquiry.description],
+  const reference = `TC-${leadId.replaceAll('-', '').slice(0, 12).toUpperCase()}`;
+  const sections = [
+    ["Customer & contact", [
+      ["Name", inquiry.name],
+      ["Preferred contact", inquiry.method === "email" ? "Email" : "Phone call"],
+      ["Contact", inquiry.contact],
+      ["Town or ZIP", inquiry.location],
+    ]],
+    ["Project details", [
+      ["Project type", services.find((s) => s.id === inquiry.project).name],
+      ["Project description", inquiry.description],
+      ["Approximate dimensions", typeof data.dimensions === "string" ? data.dimensions.trim().slice(0, 200) || "Not supplied" : "Not supplied"],
+      ["Ideal timeframe", inquiry.timeframe || "Not supplied"],
+    ]],
+    ["Request information", [
+      ["Reference", reference],
+      ["Consent to respond", data.consent === "yes" ? "Agreed to share details with TrueCraft for responding" : "Not recorded"],
+      ["Source page", "/request-estimate/"],
+    ]],
   ];
+  const disclaimer = "Details only. No price calculated; Bo provides pricing separately. No booking confirmed.";
+  const field = ([label, value]) => `<p style="margin:0 0 18px;font-size:16px;line-height:1.6;overflow-wrap:anywhere;word-break:break-word"><strong style="display:block;font-size:13px;color:#475569">${escape(label)}</strong>${escape(value).replace(/\r?\n/g, "<br>")}</p>`;
   return {
     from: `Truecraft Website <${from}>`,
     to: [to],
-    subject: `TrueCraft inquiry ${leadId}`,
+    subject: `TrueCraft project inquiry | ${reference}`,
     // Homeowner-supplied values never control the sender or recipient.
     ...(inquiry.method === "email" ? { reply_to: inquiry.contact } : {}),
-    text:
-      "TrueCraft project inquiry\n\n" +
-      rows.map(([label, value]) => `${label}: ${value}`).join("\n\n"),
-    html:
-      '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>TrueCraft project inquiry</title></head><body><h1>TrueCraft project inquiry</h1><dl>' +
-      rows
-        .map(
-          ([label, value]) =>
-            `<dt>${escape(label)}</dt><dd>${escape(value).replace(/\r?\n/g, "<br>")}</dd>`,
-        )
-        .join("") +
-      "</dl></body></html>",
+    text: "TrueCraft project inquiry\n\n" + sections.map(([title, rows]) => title + "\n" + rows.map(([label, value]) => `${label}: ${value}`).join("\n\n")).join("\n\n") + "\n\n" + disclaimer,
+    html: '<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>TrueCraft project inquiry</title></head><body style="margin:0;padding:0;background:#f1f5f9;color:#172b3a;font-family:Arial,Helvetica,sans-serif">' +
+      '<div lang="en" dir="ltr" style="padding:16px 12px"><div style="max-width:600px;margin:0 auto;background:#ffffff;padding:24px 20px;border-top:4px solid #285c4d">' +
+      '<p style="margin:0 0 8px;font-size:13px;font-weight:bold;letter-spacing:1px;color:#285c4d">TRUECRAFT HOME IMPROVEMENT</p><h1 style="margin:0 0 28px;font-size:26px;line-height:1.25">Project inquiry</h1>' +
+      sections.map(([title, rows]) => `<h2 style="margin:24px 0 16px;padding-top:16px;border-top:1px solid #d7e0e7;font-size:19px;line-height:1.4">${escape(title)}</h2>${rows.map(field).join("")}`).join("") +
+      `<p style="margin:24px 0 0;padding:16px;background:#edf4f1;color:#172b3a;font-size:14px;line-height:1.6"><strong>Pricing &amp; booking</strong><br>${disclaimer}</p></div></div></body></html>`,
   };
 }
 
@@ -128,7 +130,7 @@ export class ResendInquiryAdapter {
       // Only the durable server outbox supplies this field; never map it from
       // request input. Preserve the original envelope across code/config changes.
       if (frozenPayload) {
-        if (frozenPayload.subject !== `TrueCraft inquiry ${leadId}` ||
+        if ((frozenPayload.subject !== `TrueCraft inquiry ${leadId}` && frozenPayload.subject !== payload.subject) ||
             JSON.stringify(frozenPayload.to) !== JSON.stringify([this.to]) ||
             !/^Truecraft Website <[^<>\r\n]+>$/.test(frozenPayload.from || '') ||
             !mailbox(frozenPayload.from.slice("Truecraft Website <".length,-1)) ||

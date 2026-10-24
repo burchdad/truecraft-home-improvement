@@ -19,3 +19,13 @@ The UI has a separate verification notice and privacy wording; all other preview
 Existing TRUECRAFT_RESEND_API_KEY must be scoped to this review branch without decrypting or regenerating it. No elevated DB variables are used, even if still injected by the paused provider setup. No temporary owner connection is employed as a substitute.
 
 References: https://vercel.com/docs/botid/get-started and https://resend.com/docs/dashboard/emails/idempotency-keys
+
+## Production activation prepared October 24
+
+The public form is gated by `VERCEL_ENV=production`, `TRUECRAFT_EMAIL_ONLY_ENABLED=true`, and the presence of `TRUECRAFT_RESEND_API_KEY`. Without those conditions the production page stays call-only and the endpoint refuses sends. Production requests must originate at `https://truecraft-home-improvements.vercel.app`; the server fixes the recipient to `Texastruecrafthomes@gmail.com`. Preview verification remains separately gated and expired.
+
+The reviewed email layout uses a short display reference, with the full internal idempotency key unchanged. Old frozen durable envelopes retain compatibility; the dormant database/outbox code is not activated. Do not replay prior accepted inquiries with a changed email payload: Resend can reject reuse of a key with changed content. Use one new clearly fictional production verification inquiry only after configuration approval.
+
+Current readiness blocker: the existing sensitive email key has Preview-only branch scope. Production scope needs explicit per-action confirmation before changing credential access. No secret retrieval, new credential or provider permission expansion is needed if the supported UI can preserve the existing value while changing its environment scope. Production enablement must follow that confirmation and a fresh deployment.
+
+Email-only limitations remain: provider acceptance is not inbox receipt, no website inquiry backup or retry outbox, provider deduplication lasts 24 hours, and the supplemental local throttle is per server instance rather than a shared global quota. BotID Basic checks are mandatory. No database, Blob, account-permission or domain changes are part of this activation.

@@ -65,7 +65,8 @@ test("mocked request matches Resend REST contract and never reports delivery or 
   assert.equal(body.from, `Truecraft Website <${config.from}>`);
   assert.match(body.text, /Source page: \/request-estimate\//);
   assert.match(body.text, /Ideal timeframe: Not supplied/);
-  assert.match(body.subject, new RegExp(lead.leadId));
+  assert.equal(body.subject, "TrueCraft project inquiry | TC-AAAAAAAABBBB");
+  assert.doesNotMatch(body.text + body.html + body.subject, new RegExp(lead.leadId));
   assert.deepEqual(result, {
     status: "submitted",
     delivery: "unconfirmed",
@@ -269,3 +270,17 @@ test("abort timeout bounds request and is marked uncertain, never delivered", as
     retryable: true,
   });
 });
+
+ test("optional dimensions use a visible fallback and supplied text is escaped", () => {
+   for (const dimensions of [undefined, "", "   "]) {
+     const body = renderInquiryNotification({...lead, data:{...data, dimensions}, from:config.from, to:config.to});
+     assert.match(body.text, /Approximate dimensions: Not supplied/);
+     assert.match(body.html, /Approximate dimensions<\/strong>Not supplied/);
+   }
+   const body = renderInquiryNotification({...lead, data:{...data, dimensions:'<b>12 & 20</b>'}, from:config.from, to:config.to});
+   assert.match(body.html, /&lt;b&gt;12 &amp; 20&lt;\/b&gt;/);
+   assert.equal(body.subject, "TrueCraft project inquiry | TC-AAAAAAAABBBB");
+   assert.doesNotMatch(body.subject, /[\r\n]/);
+   assert.throws(() => renderInquiryNotification({...lead, leadId:lead.leadId + "\r\nBcc: injected", from:config.from, to:config.to}), /Invalid notification/);
+   assert.match(body.text, /No price calculated; Bo provides pricing separately. No booking confirmed./);
+ });

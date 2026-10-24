@@ -32,3 +32,12 @@ test('estimate actions call directly and planning remains secondary', () => {
  assert.match(home,/href="\/request-estimate\/">Plan your call/);
  assert.match(render('/request-estimate/',{production:true,siteUrl}),/What to have in mind/);
 });
+test('approved production intake is indexable, clear and email-only while preserving calls',()=>{
+ const html=render('/request-estimate/',{production:true,siteUrl,emailIntake:true});
+ assert.match(html,/data-submit-enabled="true" data-endpoint="\/api\/email-estimate"/);
+ assert.match(html,/No price is calculated here/);assert.match(html,/does not save a backup/);
+ assert.match(html,/email-only-botid.js/);assert.match(html,/tel:\+19032750361/);
+ assert.doesNotMatch(html,/Fictional email verification|Preview —|Online sending unavailable/);
+ const privacy=render('/privacy/',{production:true,siteUrl,emailIntake:true});
+ assert.match(privacy,/Resend/);assert.match(privacy,/BotID/);assert.doesNotMatch(privacy,/A call-only website/);
+});

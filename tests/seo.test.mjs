@@ -31,6 +31,7 @@ test('service pages have distinct metadata, truthful structured data and crawlab
 test('public ownership tags persist in the shared head on every route and build mode', () => {
  const tags = [
   '<meta name="google-site-verification" content="uY54vnrgA6nBAv3z_xuGWU0vSGI7EqPuixry-_HAIMc" />',
+  '<meta name="google-site-verification" content="kzgnwfsQuZN6KloZkS0VxdUXQrDWmPI8C7IXoRF3YnY" />',
   '<meta name="msvalidate.01" content="96D6D2B55D94154BE6C7F6B25E3B4EE8" />'
  ];
  for (const production of [false, true]) for (const [path] of [...routes, ['/404/']]) {

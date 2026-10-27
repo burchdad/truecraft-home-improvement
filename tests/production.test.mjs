@@ -28,7 +28,7 @@ test('estimate actions call directly and planning remains secondary', () => {
   assert.doesNotMatch(html, /class="button" href="\/request-estimate\//);
  }
  const home=render('/',{production:true,siteUrl});
- assert.match(home,/class="service-card" href="tel:\+19032750361"/);
+ assert.match(home,/class="service-card" href="\/services\/#kitchens-bathrooms"/);
  assert.match(home,/href="\/request-estimate\/">Plan your call/);
  assert.match(render('/request-estimate/',{production:true,siteUrl}),/What to have in mind/);
 });

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {routes, servicePages} from '../src/content.mjs';
 import {render} from '../src/templates.mjs';
-const siteUrl = 'https://truecraft-home-improvements.vercel.app';
+const siteUrl = 'https://www.truecrafthomeimprovement.com';
 test('service pages have distinct metadata, truthful structured data and crawlable discovery', () => {
  const titles = new Set(), descriptions = new Set();
  for (const [path] of routes) {

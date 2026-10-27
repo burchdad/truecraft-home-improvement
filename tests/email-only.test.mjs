@@ -34,3 +34,12 @@ test('production activation requires its own flag and key; verification expires 
  assert.equal(emailOnlyConfig({...env,TRUECRAFT_EMAIL_ONLY_ENABLED:'true',TRUECRAFT_RESEND_API_KEY:''}).enabled,false);
  assert.equal(emailOnlyConfig({...env,VERCEL_ENV:'preview',TRUECRAFT_EMAIL_ONLY_TEST_UNTIL:'100'},100).enabled,false);
 });
+
+test('production inquiries use the verified custom-domain origin and reject foreign origins',async()=>{
+ const {PUBLIC_ORIGIN}=await import('../src/email-only-config.mjs');
+ assert.equal(PUBLIC_ORIGIN,'https://www.truecrafthomeimprovement.com');
+ const f=setup({origin:PUBLIC_ORIGIN,mode:'production'});
+ assert.equal((await f.run({...request,requestOrigin:PUBLIC_ORIGIN})).status,202);
+ assert.equal((await f.run({...request,requestOrigin:'https://foreign.invalid'})).status,403);
+ assert.equal(f.sent.length,1);
+});

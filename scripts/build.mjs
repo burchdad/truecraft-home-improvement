@@ -1,3 +1,4 @@
+import {PRODUCTION_ORIGIN} from "../src/site-config.mjs";
 import {emailOnlyConfig} from '../src/email-only-config.mjs';
 import {build} from "esbuild";
 import fs from "node:fs/promises";
@@ -7,7 +8,7 @@ const intakeConfig=emailOnlyConfig(process.env);
 const emailVerification=intakeConfig.enabled && intakeConfig.mode === "verification";
 const emailIntake=intakeConfig.enabled && intakeConfig.mode === "production";
 const production = process.env.VERCEL_ENV === "production";
-let siteUrl = process.env.SITE_URL || (production ? "https://truecraft-home-improvements.vercel.app" : undefined);
+let siteUrl = production ? PRODUCTION_ORIGIN : process.env.SITE_URL;
 if (production && !siteUrl) throw Error("Production requires SITE_URL");
 if (siteUrl) {
   const url = new URL(siteUrl);

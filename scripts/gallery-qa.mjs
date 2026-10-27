@@ -11,7 +11,7 @@ for(const width of [390,1440]){
   const r=await page.goto(origin+route); assert.equal(r.status(),200);
   assert.equal(await page.locator('form').count(),route==='/request-estimate/'?1:0);
   if(route==='/request-estimate/')assert.equal(await page.locator('#estimate-request').getAttribute('data-submit-enabled'),'true');
-  assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'),'https://truecraft-home-improvements.vercel.app'+route);
+  assert.equal(await page.locator('link[rel=canonical]').getAttribute('href'),'https://www.truecrafthomeimprovement.com'+route);
   assert.equal(await page.locator('meta[name=robots]').getAttribute('content'),'index, follow');
   assert(await page.locator('a[href="tel:+19032750361"]').count());
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));

@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 import {render} from '../../src/templates.mjs';
 for(const width of [375,1280])test(`production form layout and guarded submissions at ${width}px`,async({page})=>{
  await page.setViewportSize({width,height:900});
- await page.route('**/request-estimate/',route=>route.fulfill({contentType:'text/html',body:render('/request-estimate/',{production:true,emailIntake:true,siteUrl:'https://truecraft-home-improvements.vercel.app'})}));
+ await page.route('**/request-estimate/',route=>route.fulfill({contentType:'text/html',body:render('/request-estimate/',{production:true,emailIntake:true,siteUrl:'https://www.truecrafthomeimprovement.com'})}));
  // Browser behavior only: BotID and transport are mocked, never send an email.
  await page.route('**/email-only-botid.js',route=>route.fulfill({contentType:'text/javascript',body:''}));
  let requests=0;const keys=[];

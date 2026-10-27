@@ -1,4 +1,5 @@
-export const PUBLIC_ORIGIN='https://truecraft-home-improvements.vercel.app';
+import {PRODUCTION_ORIGIN} from "./site-config.mjs";
+export const PUBLIC_ORIGIN=PRODUCTION_ORIGIN;
 // Explicit production gate; preview flags cannot activate production.
 export function emailOnlyConfig(env,now=Date.now()){
  const production=env.VERCEL_ENV==='production';

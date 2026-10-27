@@ -1,3 +1,4 @@
+import {PRODUCTION_ORIGIN} from "./site-config.mjs";
 import fs from "node:fs";
 import {
   business as b,
@@ -108,7 +109,7 @@ function servicePage(service) {
   return `<nav class="wrap" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/services/">Services</a> / <span aria-current="page">${escape(service.title)}</span></nav>${intro("SERVING TYLER &amp; EAST TEXAS", `${escape(service.title)} in Tyler, TX`, escape(service.intro))}<section class="wrap about-section"><div>${photo(service.photo, {hero: true})}</div><div><h2>${escape(service.heading)}</h2><p>${escape(service.copy)}</p><h2>What to share with Bo</h2><ul>${service.details.map(detail => `<li>${escape(detail)}</li>`).join("")}</ul>${cta("Call to discuss your project")}<p><a href="/request-estimate/">Plan your estimate or send project details</a></p></div></section><section class="wrap prose section"><h2>${escape(service.question)}</h2><p>${escape(service.answer)}</p><h2>Discuss your project location</h2><p>TrueCraft serves Tyler and surrounding East Texas communities. Share your town or ZIP with Bo to confirm whether your location and project are a fit.</p><h2>Explore related work</h2><p><a href="/our-work/">View TrueCraft’s project photographs</a> and <a href="/services/">all services</a>.</p><ul>${servicePages.filter(other => other.slug !== service.slug).map(other => `<li><a href="/services/${other.slug}/">${escape(other.title)}</a></li>`).join("")}</ul></section>${contactBanner()}`;
 }
 function structuredData(siteUrl, service) {
-  const origin = siteUrl || "https://truecraft-home-improvements.vercel.app";
+  const origin = siteUrl || PRODUCTION_ORIGIN;
   const provider = {"@type": "HomeAndConstructionBusiness", "@id": `${origin}/#business`, name: b.name, url: origin, telephone: "+19032750361", email: "texastruecrafthomes@gmail.com", image: `${origin}/images/truecraft-authentic-logo-facebook.jpg`, areaServed: [{"@type": "City", name: "Tyler", containedInPlace: {"@type": "State", name: "Texas"}}, {"@type": "Place", name: "East Texas"}], sameAs: ["https://www.facebook.com/p/TrueCraft-Home-Improvements-100063467111862/", "https://maps.app.goo.gl/Kw2LZEqgUFz26bkq5"]};
   const graph = [provider, {"@type": "WebSite", "@id": `${origin}/#website`, url: origin, name: b.name, publisher: {"@id": provider["@id"]}}];
   if (service) {

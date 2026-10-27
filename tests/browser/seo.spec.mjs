@@ -7,7 +7,7 @@ for (const width of [390,1440]) test(`production service pages at ${width}px`, a
  await page.setViewportSize({width,height:900});
  for (const service of servicePages) {
   const path = `/services/${service.slug}/`;
-  await page.route(`**${path}`, route => route.fulfill({contentType:'text/html',body:render(path,{production:true,emailIntake:true,siteUrl:'https://truecraft-home-improvements.vercel.app'})}));
+  await page.route(`**${path}`, route => route.fulfill({contentType:'text/html',body:render(path,{production:true,emailIntake:true,siteUrl:'https://www.truecrafthomeimprovement.com'})}));
   await page.goto(path);
   await expect(page.locator('h1')).toHaveCount(1);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);

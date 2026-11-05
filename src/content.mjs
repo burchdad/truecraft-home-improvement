@@ -17,7 +17,7 @@ export const services = [
   {
     id: "interiors",
     name: "Interior improvements",
-    photo: 1,
+    photo: 24,
     copy: "From drywall to interior updates, tell us which parts of your home you would like to improve.",
   },
   {

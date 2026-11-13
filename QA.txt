@@ -1,0 +1,3 @@
+Built 20 preview-only pages
+
+Static HTML links/assets check: 20 pages; all noindex; zero forms; zero Google analytics scripts.

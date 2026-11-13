@@ -60,3 +60,16 @@ export function validateInquiry(input) {
     errors.description = "Add at least 10 characters about your project.";
   return { data, errors };
 }
+
+// Details-only intake validation. Values are data, never executable instructions.
+export function validateEstimateRequest(input) {
+  const checked = validateInquiry(input);
+  const { data, errors } = checked;
+  if (errors.form) return checked;
+  if (input.dimensions !== undefined && typeof input.dimensions !== 'string') errors.dimensions = 'Use plain text for approximate dimensions.';
+  data.dimensions = typeof input.dimensions === 'string' ? input.dimensions.trim() : '';
+  if (data.dimensions.length > 200 || /[\u0000-\u001f\u007f]/.test(data.dimensions)) errors.dimensions = 'Use up to 200 characters on one line.';
+  data.consent = input.consent === 'yes' ? 'yes' : '';
+  if (!data.consent) errors.consent = 'Please agree to share these details with TrueCraft so they can respond.';
+  return checked;
+}

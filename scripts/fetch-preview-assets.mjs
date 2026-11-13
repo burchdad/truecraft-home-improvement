@@ -1,0 +1,3 @@
+import {readFile,writeFile,mkdir} from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';
+const files=JSON.parse(await readFile('preview/assets.json','utf8'));const hash=b=>createHash('sha256').update(b).digest('hex');
+for(const f of files){const dest=path.join('public',f.path);try{await readFile(dest);continue}catch{}const r=await fetch('https://www.truecrafthomeimprovement.com/'+f.path);if(!r.ok)throw Error(`Asset unavailable: ${f.path}`);const b=Buffer.from(await r.arrayBuffer());if(hash(b)!==f.sha256)throw Error(`Live asset changed: ${f.path}; recover captured version before building`);await mkdir(path.dirname(dest),{recursive:true});await writeFile(dest,b)}

@@ -1,9 +1,11 @@
-import { validateInquiry, projectTypes } from "./validation.js";
+import { initializeComparisons } from "./project-comparison.js";
+initializeComparisons();
 const menu = document.querySelector(".menu-toggle"),
   nav = document.querySelector("#main-nav");
 menu.hidden = false;
 nav.classList.add("js-menu");
 function closeMenu() {
+  closeDropdown();
   nav.classList.remove("open");
   menu.setAttribute("aria-expanded", "false");
 }
@@ -13,18 +15,71 @@ menu.addEventListener("click", () => {
   nav.classList.toggle("open", open);
   if (open) nav.querySelector("a").focus();
 });
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && menu.getAttribute("aria-expanded") === "true") {
-    closeMenu();
-    menu.focus();
+const dropdown = document.querySelector('.ref-dropdown');
+const dropdownToggle = document.querySelector('.ref-dropdown-toggle');
+function closeDropdown() {
+  dropdown?.classList.remove('is-open');
+  dropdownToggle?.setAttribute('aria-expanded', 'false');
+}
+function openDropdown() {
+  dropdown.classList.add('is-open');
+  dropdownToggle.setAttribute('aria-expanded', 'true');
+}
+if (dropdown) {
+  dropdown.classList.add('is-enhanced');
+  dropdownToggle.hidden = false;
+  dropdownToggle.addEventListener('click', () => {
+    if (dropdownToggle.getAttribute('aria-expanded') === 'true') closeDropdown();
+    else openDropdown();
+  });
+  dropdown.addEventListener('pointerenter', event => {
+    if (event.pointerType === 'mouse' && matchMedia('(min-width:1024px)').matches) openDropdown();
+  });
+  dropdown.addEventListener('pointerleave', () => {
+    if (!dropdown.contains(document.activeElement)) closeDropdown();
+  });
+  document.addEventListener('focusin', event => {
+    if (!dropdown.contains(event.target)) closeDropdown();
+  });
+  document.addEventListener('click', event => { if (!dropdown.contains(event.target)) closeDropdown(); });
+}
+document.addEventListener('keydown', event => {
+  if (event.key !== 'Escape') return;
+  if (dropdownToggle?.getAttribute('aria-expanded') === 'true') {
+    closeDropdown(); dropdownToggle.focus();
+  } else if (menu.getAttribute('aria-expanded') === 'true') {
+    closeMenu(); menu.focus();
   }
 });
+nav.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+const tablist = document.querySelector('.ref-tabs');
+if (tablist) {
+  const tabs = [...tablist.querySelectorAll('[role=tab]')];
+  const panels = [...document.querySelectorAll('.ref-step-panel')];
+  function selectStep(index, focus = false) {
+    tabs.forEach((tab, i) => { tab.setAttribute('aria-selected', String(i === index)); tab.tabIndex = i === index ? 0 : -1; panels[i].hidden = i !== index; });
+    if (focus) tabs[index].focus();
+  }
+  tablist.hidden = false;
+  selectStep(0);
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => selectStep(index));
+    tab.addEventListener('keydown', event => {
+      let next;
+      if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+      if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = tabs.length - 1;
+      if (next !== undefined) { event.preventDefault(); selectStep(next, true); }
+    });
+  });
+}
 // Touch can blur the focused link before the toggle's click arrives. Closing
 // on blur would make that same click reopen the menu instead of closing it.
 document.addEventListener("click", (event) => {
   if (!nav.contains(event.target) && !menu.contains(event.target)) closeMenu();
 });
-matchMedia("(min-width: 801px)").addEventListener("change", closeMenu);
+matchMedia("(min-width: 1024px)").addEventListener("change", closeMenu);
 const filters = document.querySelector(".filters");
 if (filters) {
   filters.hidden = false;
@@ -46,65 +101,5 @@ if (filters) {
     });
     document.querySelector("#gallery-status").textContent =
       `${count} photographs shown.`;
-  });
-}
-const form = document.querySelector("#inquiry");
-if (form) {
-  const check = document.querySelector("#check-details");
-  check.hidden = false;
-  const method = form.elements.method,
-    contact = form.elements.contact;
-  method.addEventListener("change", () => {
-    contact.value = "";
-    contact.type = method.value === "email" ? "email" : "tel";
-    contact.autocomplete = method.value === "email" ? "email" : "tel";
-    document.querySelector('label[for="contact"]').textContent =
-      method.value === "email" ? "Email address" : "Phone number";
-    contact.removeAttribute("aria-invalid");
-    document.querySelector("#contact-error").textContent = "";
-    document.querySelector("#form-status").textContent = "";
-  });
-  const project = new URLSearchParams(location.search).get("project");
-  if (projectTypes.includes(project)) form.elements.project.value = project;
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    document.querySelector("#form-status").textContent =
-      "Preview only, not connected. Nothing was sent or saved.";
-  });
-  check.addEventListener("click", () => {
-    const { errors } = validateInquiry(Object.fromEntries(new FormData(form)));
-    const summary = document.querySelector("#error-summary");
-    summary.replaceChildren();
-    form.querySelectorAll(".field-error").forEach((e) => (e.textContent = ""));
-    form
-      .querySelectorAll("[aria-invalid]")
-      .forEach((e) => e.removeAttribute("aria-invalid"));
-    const keys = Object.keys(errors);
-    summary.hidden = !keys.length;
-    const status = document.querySelector("#form-status");
-    status.textContent = "";
-    if (keys.length) {
-      const heading = document.createElement("strong");
-      heading.textContent = "Please check these details:";
-      summary.append(heading);
-      const list = document.createElement("ul");
-      summary.append(list);
-      keys.forEach((key) => {
-        const control = form.elements[key];
-        if (!control) return;
-        control.setAttribute("aria-invalid", "true");
-        document.getElementById(`${key}-error`).textContent = errors[key];
-        const li = document.createElement("li"),
-          a = document.createElement("a");
-        a.href = `#${key}`;
-        a.textContent = `${document.querySelector(`label[for="${key}"]`).textContent}: ${errors[key]}`;
-        li.append(a);
-        list.append(li);
-      });
-      summary.focus();
-    } else {
-      status.textContent =
-        "Details checked locally. Nothing was sent or saved. Online inquiries are not connected; please call (903) 275-0361.";
-    }
   });
 }

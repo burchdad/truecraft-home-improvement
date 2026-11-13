@@ -3,3 +3,5 @@
 
 /* Compact service section, requested after preview review. */
 .ed-services>img{min-height:560px}.ed-services>div{padding-top:48px;padding-bottom:48px}.ed-services h2{font-size:clamp(38px,4vw,54px);margin-bottom:20px}.ed-services nav{margin-top:22px}.ed-services nav a{padding:12px 0}.ed-services p:not(.eyebrow){margin-bottom:16px}@media(max-width:800px){.ed-services>img{min-height:0;height:280px}.ed-services>div{padding:36px 24px}.ed-services h2{font-size:40px}}
+
+.ed-services{position:relative;min-height:560px}.ed-services>img{position:absolute;inset:0;width:50%;height:100%;min-height:0}.ed-services>div{grid-column:2}@media(max-width:800px){.ed-services{min-height:0}.ed-services>img{position:static;width:100%;height:280px}.ed-services>div{grid-column:1}}

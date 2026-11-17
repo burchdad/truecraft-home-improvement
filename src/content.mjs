@@ -2,7 +2,7 @@ export const business = {
   name: "TrueCraft Home Improvements LLC",
   phone: "(903) 275-0361",
   tel: "tel:+19032750361",
-  base: "Frankston, Texas",
+  base: "Tyler, Texas",
   established: "2021",
   reviewDate: "October 19, 2026",
   maps: "https://www.google.com/maps/place/TrueCraft+Home+Improvements+LLC/@32.212331,-95.555003,10z/data=!3m1!4b1!4m6!3m5!1s0x88e565b767eb47b7:0xecf931e13c3ce431!8m2!3d32.212331!4d-95.555003!16s%2Fg%2F11yfdxvk3k?hl=en&entry=ttu",
@@ -105,7 +105,7 @@ export const routes = [
   [
     "/about/",
     "About",
-    "Meet TrueCraft Home Improvements LLC, serving Tyler and East Texas. Based in Frankston, Texas and established in 2021.",
+    "Meet TrueCraft Home Improvements LLC, serving Tyler and East Texas. Based in Tyler, Texas and established in 2021.",
   ],
   [
     "/request-estimate/",

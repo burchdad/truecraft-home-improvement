@@ -1,0 +1,2328 @@
+[
+  {
+    "id": 1,
+    "slug": "wood-interior",
+    "width": 1086,
+    "height": 1448,
+    "alt": "Wood-paneled interior with white door trim and ceiling beams.",
+    "widths": [
+      480,
+      960,
+      1086
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "living-room",
+    "width": 2048,
+    "height": 1536,
+    "alt": "Wide view of living room with fireplace and built-in shelves.",
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "enclosed-room",
+    "width": 1536,
+    "height": 2048,
+    "alt": "Wood-lined enclosed room with ceiling fans and large windows.",
+    "widths": [
+      480,
+      960,
+      1536
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "rear-enclosure",
+    "width": 2048,
+    "height": 1152,
+    "alt": "Rear house enclosure with metal roof beside a swimming pool.",
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "kitchen",
+    "width": 720,
+    "height": 960,
+    "alt": "Kitchen with white cabinets, island, patterned counters and wood-look flooring.",
+    "widths": [
+      480,
+      720
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "garage",
+    "width": 2048,
+    "height": 1536,
+    "alt": "Blue-walled garage with speckled floor and geometric ceiling lighting.",
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "wood-fence",
+    "width": 2048,
+    "height": 1536,
+    "alt": "Wood privacy fence along a residential yard.",
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "bathroom",
+    "width": 647,
+    "height": 878,
+    "alt": "Bright bathroom with a tub, marble-patterned tiled shower walls, pebble shower floor and polished floor tiles.",
+    "widths": [
+      480,
+      647
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "double-vanity",
+    "width": 1536,
+    "height": 2048,
+    "alt": "Double-sink bathroom vanity with white cabinets and tiled floor.",
+    "widths": [
+      480,
+      960,
+      1536
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "front-porch",
+    "width": 1536,
+    "height": 2048,
+    "alt": "Front view of a wood porch with central steps and an overhead cover.",
+    "widths": [
+      480,
+      960,
+      1536
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "covered-front-porch-brick-base",
+    "width": 641,
+    "height": 920,
+    "alt": "Covered wood porch with railings, side steps and a brick base in front of gray siding.",
+    "widths": [
+      480,
+      641
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "elevated-covered-front-porch",
+    "width": 641,
+    "height": 862,
+    "alt": "Elevated covered wood porch with exposed posts, railings and stairs at the left.",
+    "widths": [
+      480,
+      641
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "dining-room-trim",
+    "width": 874,
+    "height": 1168,
+    "alt": "Dining room with a vaulted ceiling, white crown molding and an arched opening.",
+    "widths": [
+      480,
+      874
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "wood-cabinet-kitchen",
+    "width": 874,
+    "height": 1167,
+    "alt": "Kitchen with wood cabinets, an island, patterned countertops and diagonal floor tiles.",
+    "widths": [
+      480,
+      874
+    ]
+  },
+  {
+    "id": 26,
+    "slug": "white-paneled-room-metal-ceiling",
+    "width": 1448,
+    "height": 1086,
+    "alt": "White-paneled room with glazed double doors, exposed wood beams and a corrugated metal ceiling.",
+    "widths": [
+      480,
+      960,
+      1448
+    ]
+  },
+  {
+    "id": 27,
+    "slug": "interior-staircase",
+    "width": 1086,
+    "height": 1448,
+    "alt": "Wood staircase bordered by white horizontal paneling beside corrugated metal walls.",
+    "widths": [
+      480,
+      960,
+      1086
+    ]
+  },
+  {
+    "id": 28,
+    "slug": "white-paneled-room-alternate",
+    "width": 1536,
+    "height": 2048,
+    "alt": "Alternate room view showing white paneling, windows, exposed beams and a metal ceiling.",
+    "widths": [
+      480,
+      960,
+      1536
+    ]
+  },
+  {
+    "id": 29,
+    "slug": "covered-patio-detail-bo",
+    "width": 700,
+    "height": 1284,
+    "alt": "Covered patio with a wood ceiling, ceiling fans, recessed lights, seating and a picnic table.",
+    "widths": [
+      480,
+      700
+    ]
+  },
+  {
+    "id": 30,
+    "slug": "poolside-covered-patio-bo",
+    "width": 700,
+    "height": 950,
+    "alt": "Covered patio with seating and a picnic table, viewed across a swimming pool.",
+    "widths": [
+      480,
+      700
+    ]
+  },
+  {
+    "id": 31,
+    "slug": "wood-deck-stairs-bo",
+    "width": 700,
+    "height": 950,
+    "alt": "Raised wood deck with stairs, railings and exposed wood framing, viewed from above.",
+    "widths": [
+      480,
+      700
+    ]
+  },
+  {
+    "id": 1012,
+    "slug": "project-12-privacy-fence-beside-a-gray-house",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Wood panels and a metal-framed gate beside gray siding. Overview."
+  },
+  {
+    "id": 1014,
+    "slug": "project-14-privacy-fence-beside-a-gray-house",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Wood panels and a metal-framed gate beside gray siding. Detail view 1."
+  },
+  {
+    "id": 1013,
+    "slug": "project-13-privacy-fence-beside-a-gray-house",
+    "width": 960,
+    "height": 720,
+    "widths": [
+      480,
+      960
+    ],
+    "alt": "Wood panels and a metal-framed gate beside gray siding. Detail view 2."
+  },
+  {
+    "id": 1024,
+    "slug": "project-24-capped-fence-and-driveway-gates",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Capped wood panels, driveway gates and supporting frame details. Overview."
+  },
+  {
+    "id": 1015,
+    "slug": "project-15-capped-fence-and-driveway-gates",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Capped wood panels, driveway gates and supporting frame details. Detail view 1."
+  },
+  {
+    "id": 1016,
+    "slug": "project-16-capped-fence-and-driveway-gates",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Capped wood panels, driveway gates and supporting frame details. Detail view 2."
+  },
+  {
+    "id": 1017,
+    "slug": "project-17-capped-fence-and-driveway-gates",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Capped wood panels, driveway gates and supporting frame details. Detail view 3."
+  },
+  {
+    "id": 1020,
+    "slug": "project-20-capped-fence-and-driveway-gates",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Capped wood panels, driveway gates and supporting frame details. Detail view 4."
+  },
+  {
+    "id": 1021,
+    "slug": "project-21-capped-fence-and-driveway-gates",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Capped wood panels, driveway gates and supporting frame details. Detail view 5."
+  },
+  {
+    "id": 1023,
+    "slug": "project-23-capped-fence-and-driveway-gates",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Capped wood panels, driveway gates and supporting frame details. Detail view 6."
+  },
+  {
+    "id": 1022,
+    "slug": "project-22-brick-house-side-passage",
+    "width": 960,
+    "height": 720,
+    "widths": [
+      480,
+      960
+    ],
+    "alt": "A narrow side passage and wood gate beside brick walls. Overview."
+  },
+  {
+    "id": 1018,
+    "slug": "project-18-brick-house-side-passage",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A narrow side passage and wood gate beside brick walls. Detail view 1."
+  },
+  {
+    "id": 1019,
+    "slug": "project-19-brick-house-side-passage",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A narrow side passage and wood gate beside brick walls. Detail view 2."
+  },
+  {
+    "id": 1027,
+    "slug": "project-27-grassy-side-yard-fence",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A long wood fence beside a grassy passage. Overview."
+  },
+  {
+    "id": 1026,
+    "slug": "project-26-wood-and-wire-enclosure-by-tall-trees",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "An open wood-and-wire enclosure beside a two-story house. Overview."
+  },
+  {
+    "id": 1031,
+    "slug": "project-31-wood-and-wire-yard-fence",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views around a porch-front house, with black post caps and a gravel drive. Overview."
+  },
+  {
+    "id": 1028,
+    "slug": "project-28-wood-and-wire-yard-fence",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views around a porch-front house, with black post caps and a gravel drive. Detail view 1."
+  },
+  {
+    "id": 1030,
+    "slug": "project-30-wood-and-wire-yard-fence",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Matching views around a porch-front house, with black post caps and a gravel drive. Detail view 2."
+  },
+  {
+    "id": 1029,
+    "slug": "project-29-wood-and-wire-yard-fence",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views around a porch-front house, with black post caps and a gravel drive. Detail view 3."
+  },
+  {
+    "id": 1035,
+    "slug": "project-35-natural-tone-backyard-privacy-fence",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Perimeter fencing and double gates at a stone-and-stucco house. Overview."
+  },
+  {
+    "id": 1034,
+    "slug": "project-34-natural-tone-backyard-privacy-fence",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Perimeter fencing and double gates at a stone-and-stucco house. Detail view 1."
+  },
+  {
+    "id": 1033,
+    "slug": "project-33-natural-tone-backyard-privacy-fence",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Perimeter fencing and double gates at a stone-and-stucco house. Detail view 2."
+  },
+  {
+    "id": 1032,
+    "slug": "project-32-natural-tone-backyard-privacy-fence",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Perimeter fencing and double gates at a stone-and-stucco house. Detail view 3."
+  },
+  {
+    "id": 1037,
+    "slug": "project-37-natural-tone-backyard-privacy-fence",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Perimeter fencing and double gates at a stone-and-stucco house. Detail view 4."
+  },
+  {
+    "id": 1036,
+    "slug": "project-36-natural-tone-backyard-privacy-fence",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Perimeter fencing and double gates at a stone-and-stucco house. Detail view 5."
+  },
+  {
+    "id": 1040,
+    "slug": "project-40-fence-above-a-stone-retaining-wall",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Wood fencing along a backyard with trees, string lights and a swing set. Overview."
+  },
+  {
+    "id": 1038,
+    "slug": "project-38-fence-above-a-stone-retaining-wall",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Wood fencing along a backyard with trees, string lights and a swing set. Detail view 1."
+  },
+  {
+    "id": 1039,
+    "slug": "project-39-fence-above-a-stone-retaining-wall",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Wood fencing along a backyard with trees, string lights and a swing set. Detail view 2."
+  },
+  {
+    "id": 1063,
+    "slug": "project-63-covered-patio-with-a-wood-ceiling",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A covered patio with timber posts, ceiling lighting and a fan. Overview."
+  },
+  {
+    "id": 1057,
+    "slug": "project-57-covered-patio-with-a-wood-ceiling",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A covered patio with timber posts, ceiling lighting and a fan. Detail view 1."
+  },
+  {
+    "id": 1064,
+    "slug": "project-64-covered-patio-with-a-wood-ceiling",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A covered patio with timber posts, ceiling lighting and a fan. Detail view 2."
+  },
+  {
+    "id": 1060,
+    "slug": "project-60-covered-patio-with-a-wood-ceiling",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A covered patio with timber posts, ceiling lighting and a fan. Detail view 3."
+  },
+  {
+    "id": 1059,
+    "slug": "project-59-covered-patio-with-a-wood-ceiling",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A covered patio with timber posts, ceiling lighting and a fan. Detail view 4."
+  },
+  {
+    "id": 1061,
+    "slug": "project-61-covered-patio-with-a-wood-ceiling",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A covered patio with timber posts, ceiling lighting and a fan. Detail view 5."
+  },
+  {
+    "id": 1062,
+    "slug": "project-62-covered-patio-with-a-wood-ceiling",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A covered patio with timber posts, ceiling lighting and a fan. Detail view 6."
+  },
+  {
+    "id": 1065,
+    "slug": "project-65-raised-porch-with-a-gabled-cover",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A raised timber porch with stairs and a gabled roof. Overview."
+  },
+  {
+    "id": 1067,
+    "slug": "project-67-raised-porch-with-a-gabled-cover",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A raised timber porch with stairs and a gabled roof. Detail view 1."
+  },
+  {
+    "id": 1066,
+    "slug": "project-66-raised-porch-with-a-gabled-cover",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A raised timber porch with stairs and a gabled roof. Detail view 2."
+  },
+  {
+    "id": 1069,
+    "slug": "project-69-red-outbuilding-entry-deck",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A broad timber landing and steps outside a red outbuilding. Overview."
+  },
+  {
+    "id": 1068,
+    "slug": "project-68-red-outbuilding-entry-deck",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A broad timber landing and steps outside a red outbuilding. Detail view 1."
+  },
+  {
+    "id": 1075,
+    "slug": "project-75-porch-along-a-teal-house",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Covered side and front porch views with timber rails and white trim. Overview."
+  },
+  {
+    "id": 1074,
+    "slug": "project-74-porch-along-a-teal-house",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Covered side and front porch views with timber rails and white trim. Detail view 1."
+  },
+  {
+    "id": 1073,
+    "slug": "project-73-porch-along-a-teal-house",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Covered side and front porch views with timber rails and white trim. Detail view 2."
+  },
+  {
+    "id": 1071,
+    "slug": "project-71-porch-along-a-teal-house",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Covered side and front porch views with timber rails and white trim. Detail view 3."
+  },
+  {
+    "id": 1070,
+    "slug": "project-70-porch-along-a-teal-house",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Covered side and front porch views with timber rails and white trim. Detail view 4."
+  },
+  {
+    "id": 1072,
+    "slug": "project-72-porch-along-a-teal-house",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Covered side and front porch views with timber rails and white trim. Detail view 5."
+  },
+  {
+    "id": 1076,
+    "slug": "project-76-yellow-house-front-porch",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Front entry and covered walkway views at a yellow house. Overview."
+  },
+  {
+    "id": 1077,
+    "slug": "project-77-yellow-house-front-porch",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Front entry and covered walkway views at a yellow house. Detail view 1."
+  },
+  {
+    "id": 1078,
+    "slug": "project-78-yellow-house-front-porch",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Front entry and covered walkway views at a yellow house. Detail view 2."
+  },
+  {
+    "id": 1079,
+    "slug": "project-79-long-porch-with-white-rails",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A covered porch with white rails and steps beside dark siding. Overview."
+  },
+  {
+    "id": 1082,
+    "slug": "project-82-timber-entry-on-a-dark-sided-home",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Gabled entry porch, stairs and an elevated roof view. Overview."
+  },
+  {
+    "id": 1080,
+    "slug": "project-80-timber-entry-on-a-dark-sided-home",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Gabled entry porch, stairs and an elevated roof view. Detail view 1."
+  },
+  {
+    "id": 1081,
+    "slug": "project-81-timber-entry-on-a-dark-sided-home",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Gabled entry porch, stairs and an elevated roof view. Detail view 2."
+  },
+  {
+    "id": 1083,
+    "slug": "project-83-wide-covered-porch-and-steps",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A broad raised porch with timber handrails and a stair approach. Overview."
+  },
+  {
+    "id": 1084,
+    "slug": "project-84-wide-covered-porch-and-steps",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A broad raised porch with timber handrails and a stair approach. Detail view 1."
+  },
+  {
+    "id": 1086,
+    "slug": "project-86-wide-covered-porch-and-steps",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A broad raised porch with timber handrails and a stair approach. Detail view 2."
+  },
+  {
+    "id": 1085,
+    "slug": "project-85-wide-covered-porch-and-steps",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A broad raised porch with timber handrails and a stair approach. Detail view 3."
+  },
+  {
+    "id": 1058,
+    "slug": "project-58-metal-roof-detail",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Corrugated roof surface photographed from above. Overview."
+  },
+  {
+    "id": 1052,
+    "slug": "project-52-blue-screened-patio",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching exterior and interior views of a blue screened patio beside a pool. Overview."
+  },
+  {
+    "id": 1051,
+    "slug": "project-51-blue-screened-patio",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching exterior and interior views of a blue screened patio beside a pool. Detail view 1."
+  },
+  {
+    "id": 1056,
+    "slug": "project-56-blue-screened-patio",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching exterior and interior views of a blue screened patio beside a pool. Detail view 2."
+  },
+  {
+    "id": 1053,
+    "slug": "project-53-blue-screened-patio",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching exterior and interior views of a blue screened patio beside a pool. Detail view 3."
+  },
+  {
+    "id": 1050,
+    "slug": "project-50-blue-screened-patio",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching exterior and interior views of a blue screened patio beside a pool. Detail view 4."
+  },
+  {
+    "id": 1054,
+    "slug": "project-54-blue-screened-patio",
+    "width": 1152,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1152
+    ],
+    "alt": "Matching exterior and interior views of a blue screened patio beside a pool. Detail view 5."
+  },
+  {
+    "id": 1055,
+    "slug": "project-55-blue-screened-patio",
+    "width": 1152,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1152
+    ],
+    "alt": "Matching exterior and interior views of a blue screened patio beside a pool. Detail view 6."
+  },
+  {
+    "id": 1042,
+    "slug": "project-42-blue-poolside-addition",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Two exterior views of a blue addition beside a curved swimming pool. Overview."
+  },
+  {
+    "id": 1041,
+    "slug": "project-41-blue-poolside-addition",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Two exterior views of a blue addition beside a curved swimming pool. Detail view 1."
+  },
+  {
+    "id": 1043,
+    "slug": "project-43-poolside-metal-roof-addition",
+    "width": 2048,
+    "height": 1152,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "An elevated view of a light-colored addition beside a pool. Overview."
+  },
+  {
+    "id": 1011,
+    "slug": "project-11-wood-lined-enclosed-porch",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "An enclosed sitting area with wood walls and ceiling. Overview."
+  },
+  {
+    "id": 1044,
+    "slug": "project-44-screened-outbuilding",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A dark framed screened structure with a gabled roof. Overview."
+  },
+  {
+    "id": 1045,
+    "slug": "project-45-outbuilding-with-attached-wire-run",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A small sided outbuilding with windows, shelving and an attached wire enclosure. Overview."
+  },
+  {
+    "id": 1049,
+    "slug": "project-49-outbuilding-with-attached-wire-run",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A small sided outbuilding with windows, shelving and an attached wire enclosure. Detail view 1."
+  },
+  {
+    "id": 1046,
+    "slug": "project-46-outbuilding-with-attached-wire-run",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A small sided outbuilding with windows, shelving and an attached wire enclosure. Detail view 2."
+  },
+  {
+    "id": 1047,
+    "slug": "project-47-outbuilding-with-attached-wire-run",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A small sided outbuilding with windows, shelving and an attached wire enclosure. Detail view 3."
+  },
+  {
+    "id": 1048,
+    "slug": "project-48-outbuilding-with-attached-wire-run",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A small sided outbuilding with windows, shelving and an attached wire enclosure. Detail view 4."
+  },
+  {
+    "id": 1088,
+    "slug": "project-88-light-siding-and-porch-trim",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Light horizontal siding, dark shutters and white lattice around a porch. Overview."
+  },
+  {
+    "id": 1089,
+    "slug": "project-89-light-siding-and-porch-trim",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Light horizontal siding, dark shutters and white lattice around a porch. Detail view 1."
+  },
+  {
+    "id": 1090,
+    "slug": "project-90-soffit-and-fascia-at-a-brick-house",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Porch ceiling panels and roof-edge trim along brick walls. Overview."
+  },
+  {
+    "id": 1091,
+    "slug": "project-91-soffit-and-fascia-at-a-brick-house",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Porch ceiling panels and roof-edge trim along brick walls. Detail view 1."
+  },
+  {
+    "id": 1092,
+    "slug": "project-92-soffit-and-fascia-at-a-brick-house",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Porch ceiling panels and roof-edge trim along brick walls. Detail view 2."
+  },
+  {
+    "id": 1093,
+    "slug": "project-93-soffit-and-fascia-at-a-brick-house",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Porch ceiling panels and roof-edge trim along brick walls. Detail view 3."
+  },
+  {
+    "id": 1094,
+    "slug": "project-94-soffit-and-fascia-at-a-brick-house",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Porch ceiling panels and roof-edge trim along brick walls. Detail view 4."
+  },
+  {
+    "id": 1095,
+    "slug": "project-95-soffit-and-fascia-at-a-brick-house",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Porch ceiling panels and roof-edge trim along brick walls. Detail view 5."
+  },
+  {
+    "id": 1096,
+    "slug": "project-96-soffit-and-fascia-at-a-brick-house",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Porch ceiling panels and roof-edge trim along brick walls. Detail view 6."
+  },
+  {
+    "id": 1099,
+    "slug": "project-99-gable-siding-at-a-red-brick-house",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Light gable panels and roof-edge details above red brick. Overview."
+  },
+  {
+    "id": 1097,
+    "slug": "project-97-gable-siding-at-a-red-brick-house",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Light gable panels and roof-edge details above red brick. Detail view 1."
+  },
+  {
+    "id": 1098,
+    "slug": "project-98-gable-siding-at-a-red-brick-house",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Light gable panels and roof-edge details above red brick. Detail view 2."
+  },
+  {
+    "id": 1100,
+    "slug": "project-100-stone-gable-and-dark-trim",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A stone gable with an arched window and dark roof-edge trim. Overview."
+  },
+  {
+    "id": 1102,
+    "slug": "project-102-windowed-exterior-and-roof-details",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A large windowed facade, horizontal siding, gable vents and chimney cladding. Overview."
+  },
+  {
+    "id": 1101,
+    "slug": "project-101-windowed-exterior-and-roof-details",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A large windowed facade, horizontal siding, gable vents and chimney cladding. Detail view 1."
+  },
+  {
+    "id": 1106,
+    "slug": "project-106-windowed-exterior-and-roof-details",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A large windowed facade, horizontal siding, gable vents and chimney cladding. Detail view 2."
+  },
+  {
+    "id": 1103,
+    "slug": "project-103-windowed-exterior-and-roof-details",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A large windowed facade, horizontal siding, gable vents and chimney cladding. Detail view 3."
+  },
+  {
+    "id": 1105,
+    "slug": "project-105-windowed-exterior-and-roof-details",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A large windowed facade, horizontal siding, gable vents and chimney cladding. Detail view 4."
+  },
+  {
+    "id": 1104,
+    "slug": "project-104-windowed-exterior-and-roof-details",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A large windowed facade, horizontal siding, gable vents and chimney cladding. Detail view 5."
+  },
+  {
+    "id": 1107,
+    "slug": "project-107-windowed-exterior-and-roof-details",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A large windowed facade, horizontal siding, gable vents and chimney cladding. Detail view 6."
+  },
+  {
+    "id": 1108,
+    "slug": "project-108-windowed-exterior-and-roof-details",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A large windowed facade, horizontal siding, gable vents and chimney cladding. Detail view 7."
+  },
+  {
+    "id": 1110,
+    "slug": "project-110-light-sided-single-story-exterior",
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      480,
+      960,
+      1122
+    ],
+    "alt": "Two views of light siding and dark window frames. Overview."
+  },
+  {
+    "id": 1109,
+    "slug": "project-109-light-sided-single-story-exterior",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Two views of light siding and dark window frames. Detail view 1."
+  },
+  {
+    "id": 1115,
+    "slug": "project-115-timber-ramp-and-handrails",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A timber ramp, landing and rails beside a gray-sided home. Overview."
+  },
+  {
+    "id": 1111,
+    "slug": "project-111-timber-ramp-and-handrails",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A timber ramp, landing and rails beside a gray-sided home. Detail view 1."
+  },
+  {
+    "id": 1113,
+    "slug": "project-113-timber-ramp-and-handrails",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A timber ramp, landing and rails beside a gray-sided home. Detail view 2."
+  },
+  {
+    "id": 1112,
+    "slug": "project-112-timber-ramp-and-handrails",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A timber ramp, landing and rails beside a gray-sided home. Detail view 3."
+  },
+  {
+    "id": 1114,
+    "slug": "project-114-timber-ramp-and-handrails",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A timber ramp, landing and rails beside a gray-sided home. Detail view 4."
+  },
+  {
+    "id": 1137,
+    "slug": "project-137-white-kitchen-with-a-coffered-ceiling",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of white cabinetry, dark flooring and a detailed ceiling. Overview."
+  },
+  {
+    "id": 1135,
+    "slug": "project-135-white-kitchen-with-a-coffered-ceiling",
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      480,
+      960,
+      1086
+    ],
+    "alt": "Matching views of white cabinetry, dark flooring and a detailed ceiling. Detail view 1."
+  },
+  {
+    "id": 1136,
+    "slug": "project-136-white-kitchen-with-a-coffered-ceiling",
+    "width": 1844,
+    "height": 853,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Matching views of white cabinetry, dark flooring and a detailed ceiling. Detail view 2."
+  },
+  {
+    "id": 1139,
+    "slug": "project-139-white-kitchen-with-a-coffered-ceiling",
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      480,
+      960,
+      1086
+    ],
+    "alt": "Matching views of white cabinetry, dark flooring and a detailed ceiling. Detail view 3."
+  },
+  {
+    "id": 1138,
+    "slug": "project-138-white-kitchen-with-a-coffered-ceiling",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of white cabinetry, dark flooring and a detailed ceiling. Detail view 4."
+  },
+  {
+    "id": 1141,
+    "slug": "project-141-white-kitchen-with-a-coffered-ceiling",
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      480,
+      960,
+      1086
+    ],
+    "alt": "Matching views of white cabinetry, dark flooring and a detailed ceiling. Detail view 5."
+  },
+  {
+    "id": 1140,
+    "slug": "project-140-white-kitchen-with-a-coffered-ceiling",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Matching views of white cabinetry, dark flooring and a detailed ceiling. Detail view 6."
+  },
+  {
+    "id": 1134,
+    "slug": "project-134-wood-cabinet-kitchen",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A separate kitchen with wood cabinets and a long counter. Overview."
+  },
+  {
+    "id": 1118,
+    "slug": "project-118-living-room-with-built-in-shelving",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Two views of a living room with shelving around a central fireplace. Overview."
+  },
+  {
+    "id": 1117,
+    "slug": "project-117-living-room-with-built-in-shelving",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Two views of a living room with shelving around a central fireplace. Detail view 1."
+  },
+  {
+    "id": 1116,
+    "slug": "project-116-open-storage-cabinet",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A tall painted storage unit with open shelves. Overview."
+  },
+  {
+    "id": 1119,
+    "slug": "project-119-room-flooring",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Wood-look flooring in a room with an exterior door. Overview."
+  },
+  {
+    "id": 1120,
+    "slug": "project-120-hallway-flooring",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Wood-look flooring along a narrow hall. Overview."
+  },
+  {
+    "id": 1121,
+    "slug": "project-121-blue-garage-with-geometric-lights",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A blue garage interior with geometric overhead lighting. Overview."
+  },
+  {
+    "id": 1122,
+    "slug": "project-122-light-colored-garage",
+    "width": 2048,
+    "height": 1152,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "The garage before renovation, with light walls and a textured floor."
+  },
+  {
+    "id": 1123,
+    "slug": "project-123-bright-bedroom-and-closet-doors",
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      480,
+      960,
+      1086
+    ],
+    "alt": "A light bedroom with shuttered windows and closet doors. Overview."
+  },
+  {
+    "id": 1124,
+    "slug": "project-124-walk-in-closet-shelving",
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      941
+    ],
+    "alt": "Two views of white open shelves in a walk-in closet. Overview."
+  },
+  {
+    "id": 1125,
+    "slug": "project-125-walk-in-closet-shelving",
+    "width": 941,
+    "height": 1672,
+    "widths": [
+      480,
+      941
+    ],
+    "alt": "Two views of white open shelves in a walk-in closet. Detail view 1."
+  },
+  {
+    "id": 1131,
+    "slug": "project-131-wood-beam-room-and-adjoining-hall",
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      480,
+      960,
+      1086
+    ],
+    "alt": "Wood ceilings, exposed beams, white trim and adjoining hallway details. Overview."
+  },
+  {
+    "id": 1126,
+    "slug": "project-126-wood-beam-room-and-adjoining-hall",
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      480,
+      960,
+      1086
+    ],
+    "alt": "Wood ceilings, exposed beams, white trim and adjoining hallway details. Detail view 1."
+  },
+  {
+    "id": 1129,
+    "slug": "project-129-wood-beam-room-and-adjoining-hall",
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      480,
+      960,
+      1086
+    ],
+    "alt": "Wood ceilings, exposed beams, white trim and adjoining hallway details. Detail view 2."
+  },
+  {
+    "id": 1130,
+    "slug": "project-130-wood-beam-room-and-adjoining-hall",
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      480,
+      960,
+      1086
+    ],
+    "alt": "Wood ceilings, exposed beams, white trim and adjoining hallway details. Detail view 3."
+  },
+  {
+    "id": 1132,
+    "slug": "project-132-wood-beam-room-and-adjoining-hall",
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      480,
+      960,
+      1086
+    ],
+    "alt": "Wood ceilings, exposed beams, white trim and adjoining hallway details. Detail view 4."
+  },
+  {
+    "id": 1133,
+    "slug": "project-133-wood-beam-room-and-adjoining-hall",
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      480,
+      960,
+      1086
+    ],
+    "alt": "Wood ceilings, exposed beams, white trim and adjoining hallway details. Detail view 5."
+  },
+  {
+    "id": 1127,
+    "slug": "project-127-wood-lined-entry-doors",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Interior views of glazed doors surrounded by wood paneling. Overview."
+  },
+  {
+    "id": 1128,
+    "slug": "project-128-wood-lined-entry-doors",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Interior views of glazed doors surrounded by wood paneling. Detail view 1."
+  },
+  {
+    "id": 1144,
+    "slug": "project-144-gray-room-with-wide-windows",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Three matching views of a gray room with a ceiling fan and wood-look floor. Overview."
+  },
+  {
+    "id": 1142,
+    "slug": "project-142-gray-room-with-wide-windows",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Three matching views of a gray room with a ceiling fan and wood-look floor. Detail view 1."
+  },
+  {
+    "id": 1143,
+    "slug": "project-143-gray-room-with-wide-windows",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Three matching views of a gray room with a ceiling fan and wood-look floor. Detail view 2."
+  },
+  {
+    "id": 1145,
+    "slug": "project-145-color-block-room",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Dark blue and red walls with light wood-look flooring. Overview."
+  },
+  {
+    "id": 1146,
+    "slug": "project-146-warm-toned-room",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A separate room with warm wall colors and a wood floor. Overview."
+  },
+  {
+    "id": 1147,
+    "slug": "project-147-paneled-room-with-tile-floor",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A paneled room with a window and ceiling light. Overview."
+  },
+  {
+    "id": 1148,
+    "slug": "project-148-arched-dining-space",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A dining area with an arched opening and pendant lighting. Overview."
+  },
+  {
+    "id": 1150,
+    "slug": "project-150-tall-ceiling-bedroom",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Two views of a tiled bedroom with a high ceiling and decorative trim. Overview."
+  },
+  {
+    "id": 1149,
+    "slug": "project-149-tall-ceiling-bedroom",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Two views of a tiled bedroom with a high ceiling and decorative trim. Detail view 1."
+  },
+  {
+    "id": 1151,
+    "slug": "project-151-compact-light-bathroom",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A light bathroom with a dark vanity and white fixtures. Overview."
+  },
+  {
+    "id": 1152,
+    "slug": "project-152-compact-light-bathroom",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A light bathroom with a dark vanity and white fixtures. Detail view 1."
+  },
+  {
+    "id": 1153,
+    "slug": "project-153-green-bathroom",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Two views of green walls, a light vanity and a white shower enclosure. Overview."
+  },
+  {
+    "id": 1154,
+    "slug": "project-154-green-bathroom",
+    "width": 960,
+    "height": 720,
+    "widths": [
+      480,
+      960
+    ],
+    "alt": "Two views of green walls, a light vanity and a white shower enclosure. Detail view 1."
+  },
+  {
+    "id": 1158,
+    "slug": "project-158-wood-lined-bathroom",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Wood walls, a white vanity and a shower with corrugated wall panels. Overview."
+  },
+  {
+    "id": 1156,
+    "slug": "project-156-wood-lined-bathroom",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Wood walls, a white vanity and a shower with corrugated wall panels. Detail view 1."
+  },
+  {
+    "id": 1157,
+    "slug": "project-157-wood-lined-bathroom",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Wood walls, a white vanity and a shower with corrugated wall panels. Detail view 2."
+  },
+  {
+    "id": 1155,
+    "slug": "project-155-wood-lined-bathroom",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Wood walls, a white vanity and a shower with corrugated wall panels. Detail view 3."
+  },
+  {
+    "id": 1159,
+    "slug": "project-159-corner-shower",
+    "width": 1170,
+    "height": 1557,
+    "widths": [
+      480,
+      960,
+      1170
+    ],
+    "alt": "A curved shower enclosure in a light-colored bathroom. Overview."
+  },
+  {
+    "id": 1160,
+    "slug": "project-160-shower-with-dark-wood-trim",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Two views of a white shower enclosure beside dark wood trim. Overview."
+  },
+  {
+    "id": 1161,
+    "slug": "project-161-shower-with-dark-wood-trim",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Two views of a white shower enclosure beside dark wood trim. Detail view 1."
+  },
+  {
+    "id": 1165,
+    "slug": "project-165-bathroom-flooring-and-fixtures",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Light wood-look flooring, horizontal wall panels and a compact sink. Overview."
+  },
+  {
+    "id": 1162,
+    "slug": "project-162-bathroom-flooring-and-fixtures",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Light wood-look flooring, horizontal wall panels and a compact sink. Detail view 1."
+  },
+  {
+    "id": 1164,
+    "slug": "project-164-bathroom-flooring-and-fixtures",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Light wood-look flooring, horizontal wall panels and a compact sink. Detail view 2."
+  },
+  {
+    "id": 1163,
+    "slug": "project-163-bathroom-flooring-and-fixtures",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Light wood-look flooring, horizontal wall panels and a compact sink. Detail view 3."
+  },
+  {
+    "id": 1171,
+    "slug": "project-171-marble-look-shower-and-bath",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of a tiled shower, pebble-style floor, niches and a window-side bathtub. Overview."
+  },
+  {
+    "id": 1166,
+    "slug": "project-166-marble-look-shower-and-bath",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of a tiled shower, pebble-style floor, niches and a window-side bathtub. Detail view 1."
+  },
+  {
+    "id": 1169,
+    "slug": "project-169-marble-look-shower-and-bath",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of a tiled shower, pebble-style floor, niches and a window-side bathtub. Detail view 2."
+  },
+  {
+    "id": 1167,
+    "slug": "project-167-marble-look-shower-and-bath",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of a tiled shower, pebble-style floor, niches and a window-side bathtub. Detail view 3."
+  },
+  {
+    "id": 1170,
+    "slug": "project-170-marble-look-shower-and-bath",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of a tiled shower, pebble-style floor, niches and a window-side bathtub. Detail view 4."
+  },
+  {
+    "id": 1172,
+    "slug": "project-172-marble-look-shower-and-bath",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of a tiled shower, pebble-style floor, niches and a window-side bathtub. Detail view 5."
+  },
+  {
+    "id": 1168,
+    "slug": "project-168-bathroom-floor-detail",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A close view of patterned flooring during work. Overview."
+  },
+  {
+    "id": 1173,
+    "slug": "project-173-double-vanity",
+    "width": 983,
+    "height": 1311,
+    "widths": [
+      480,
+      960,
+      983
+    ],
+    "alt": "Two views of a light double vanity and wall mirror. Overview."
+  },
+  {
+    "id": 1174,
+    "slug": "project-174-double-vanity",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Two views of a light double vanity and wall mirror. Detail view 1."
+  },
+  {
+    "id": 1007,
+    "slug": "project-7-concrete-beside-a-deck",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A concrete surface beside outdoor steps and timber framing. Overview."
+  },
+  {
+    "id": 1008,
+    "slug": "project-8-entry-landing-and-step",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A concrete landing and curved-front step outside a white-sided home. Overview."
+  },
+  {
+    "id": 1009,
+    "slug": "project-9-concrete-pad-beside-gates",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A concrete pad next to a house and timber gate framing. Overview."
+  },
+  {
+    "id": 1010,
+    "slug": "project-10-concrete-along-a-fence",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A separate view of a concrete surface meeting a wood fence. Overview."
+  },
+  {
+    "id": 1000,
+    "slug": "project-0-commercial-room",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "A commercial interior with patterned wall graphics and a dark floor. Overview."
+  },
+  {
+    "id": 1001,
+    "slug": "project-1-glass-front-office-spaces",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "Matching views of glazed office spaces, striped flooring and desk areas. Overview."
+  },
+  {
+    "id": 1006,
+    "slug": "project-6-glass-front-office-spaces",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of glazed office spaces, striped flooring and desk areas. Detail view 1."
+  },
+  {
+    "id": 1003,
+    "slug": "project-3-glass-front-office-spaces",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of glazed office spaces, striped flooring and desk areas. Detail view 2."
+  },
+  {
+    "id": 1002,
+    "slug": "project-2-glass-front-office-spaces",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of glazed office spaces, striped flooring and desk areas. Detail view 3."
+  },
+  {
+    "id": 1004,
+    "slug": "project-4-glass-front-office-spaces",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of glazed office spaces, striped flooring and desk areas. Detail view 4."
+  },
+  {
+    "id": 1005,
+    "slug": "project-5-glass-front-office-spaces",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Matching views of glazed office spaces, striped flooring and desk areas. Detail view 5."
+  },
+  {
+    "id": 2002,
+    "slug": "interior-work-in-progress",
+    "width": 1536,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1536
+    ],
+    "alt": "Two people working beside built-in shelves and a fireplace, with ladders and tools."
+  },
+  {
+    "id": 2012,
+    "slug": "fence-work-in-progress",
+    "width": 2048,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "alt": "A person working with equipment beside a wood privacy fence."
+  }
+]

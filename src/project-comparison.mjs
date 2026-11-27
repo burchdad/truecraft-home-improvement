@@ -1,0 +1,5 @@
+// Ready for the user-supplied kitchen photographs once their original files are available.
+// Call with rendered <picture> markup, preserving descriptive alt text.
+export function projectComparison(beforePhoto, afterPhoto) {
+  return `<section class="wrap section kitchen-comparison" aria-labelledby="kitchen-comparison-title"><p class="eyebrow">A TRUECRAFT KITCHEN PROJECT</p><h2 id="kitchen-comparison-title">From the first stages to the finished kitchen</h2><p>Compare the kitchen during removal with the finished room. The photographs show different viewpoints of the same project.</p><div class="comparison-images" data-comparison><figure class="comparison-before">${beforePhoto}<figcaption>Before · removal underway</figcaption></figure><figure class="comparison-after">${afterPhoto}<figcaption>After · finished kitchen</figcaption></figure></div><label class="comparison-control" hidden>Slide to compare before and after<input type="range" min="0" max="100" value="50" aria-label="Amount of finished kitchen visible" aria-valuetext="50 percent after photograph"><span aria-hidden="true">Before ↔ After</span></label></section>`;
+}

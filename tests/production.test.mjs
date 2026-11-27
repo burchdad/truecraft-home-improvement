@@ -10,8 +10,8 @@ test('production is indexable, canonical and call-only',()=>{
  assert.doesNotMatch(html,/<form|PRIVATE DESIGN PREVIEW|Sending unavailable/);
  assert.match(html,/tel:\+19032750361/);
  }
- assert.match(render('/',{production:true,siteUrl}),/29 Google reviews/);
- assert.match(render('/',{production:true,siteUrl}),/October 19, 2026/);
+ assert.match(render('/',{production:true,siteUrl}),/Read Google reviews for TrueCraft Home Improvements/);
+ assert.match(render('/',{production:true,siteUrl}),/Quence Miller · Google review/);
  assert.match(render('/404/',{production:true,siteUrl}),/noindex, nofollow/);
 });
 test('default preview retains noindex and disconnected form',()=>{
@@ -20,16 +20,16 @@ test('default preview retains noindex and disconnected form',()=>{
  assert.match(html,/PRIVATE DESIGN PREVIEW/);
  assert.match(html,/Online sending unavailable/);
 });
-test('estimate actions call directly and planning remains secondary', () => {
+test('estimate actions preserve direct calling and the editorial planning journey', () => {
  for (const path of ['/', '/services/', '/our-work/', '/about/', '/request-estimate/']) {
   const html=render(path,{production:true,siteUrl});
   assert.doesNotMatch(html,/Prefer to talk|Request an estimate|<form/);
-  assert.match(html, /class="button" href="tel:\+19032750361">Call/);
+  assert.match(html, /href="tel:\+19032750361"/);
   assert.doesNotMatch(html, /class="button" href="\/request-estimate\//);
  }
  const home=render('/',{production:true,siteUrl});
- assert.match(home,/class="service-card" href="\/services\/#kitchens-bathrooms"/);
- assert.match(home,/href="\/request-estimate\/">Plan your call/);
+ assert.match(home,/href="\/services\/kitchen-updates\/"/);
+ assert.match(home,/href="\/request-estimate\/">Let’s talk about your project/);
  assert.match(render('/request-estimate/',{production:true,siteUrl}),/What to have in mind/);
 });
 test('approved production intake is indexable, clear and email-only while preserving calls',()=>{

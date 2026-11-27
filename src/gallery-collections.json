@@ -1,0 +1,700 @@
+{
+  "categories": [
+    {
+      "slug": "fencing",
+      "title": "Fencing & gates"
+    },
+    {
+      "slug": "outdoors",
+      "title": "Porches & exteriors"
+    },
+    {
+      "slug": "kitchens",
+      "title": "Kitchens"
+    },
+    {
+      "slug": "bathrooms",
+      "title": "Bathrooms"
+    },
+    {
+      "slug": "interiors",
+      "title": "Interior details"
+    },
+    {
+      "slug": "concrete",
+      "title": "Concrete"
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial spaces"
+    }
+  ],
+  "groups": [
+    {
+      "category": "fencing",
+      "title": "Privacy fence beside a gray house",
+      "description": "Wood panels and a metal-framed gate beside gray siding.",
+      "slug": "privacy-fence-beside-a-gray-house",
+      "photos": [
+        1012,
+        1014,
+        1013
+      ]
+    },
+    {
+      "category": "fencing",
+      "title": "Capped fence and driveway gates",
+      "description": "Capped wood panels, driveway gates and supporting frame details.",
+      "slug": "capped-fence-and-driveway-gates",
+      "photos": [
+        1024,
+        1015,
+        1016,
+        1017,
+        1020,
+        1021,
+        1023
+      ]
+    },
+    {
+      "category": "fencing",
+      "title": "Brick-house side passage",
+      "description": "A narrow side passage and wood gate beside brick walls.",
+      "slug": "brick-house-side-passage",
+      "photos": [
+        1022,
+        1018,
+        1019
+      ]
+    },
+    {
+      "category": "fencing",
+      "title": "Grassy side-yard fence",
+      "description": "A long wood fence beside a grassy passage.",
+      "slug": "grassy-side-yard-fence",
+      "photos": [
+        1027
+      ]
+    },
+    {
+      "category": "fencing",
+      "title": "Wood-and-wire enclosure by tall trees",
+      "description": "An open wood-and-wire enclosure beside a two-story house.",
+      "slug": "wood-and-wire-enclosure-by-tall-trees",
+      "photos": [
+        1026
+      ]
+    },
+    {
+      "category": "fencing",
+      "title": "Wood-and-wire yard fence",
+      "description": "Matching views around a porch-front house, with black post caps and a gravel drive.",
+      "slug": "wood-and-wire-yard-fence",
+      "photos": [
+        1031,
+        1028,
+        1030,
+        1029
+      ]
+    },
+    {
+      "category": "fencing",
+      "title": "Natural-tone backyard privacy fence",
+      "description": "Perimeter fencing and double gates at a stone-and-stucco house.",
+      "slug": "natural-tone-backyard-privacy-fence",
+      "photos": [
+        1035,
+        1034,
+        1033,
+        1032,
+        1037,
+        1036
+      ]
+    },
+    {
+      "category": "fencing",
+      "title": "Fence above a stone retaining wall",
+      "description": "Wood fencing along a backyard with trees, string lights and a swing set.",
+      "slug": "fence-above-a-stone-retaining-wall",
+      "photos": [
+        1040,
+        1038,
+        1039
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Covered patio with a wood ceiling",
+      "description": "A covered patio with timber posts, ceiling lighting and a fan.",
+      "slug": "covered-patio-with-a-wood-ceiling",
+      "photos": [
+        1063,
+        1057,
+        1064,
+        1060,
+        1059,
+        1061,
+        1062
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Raised porch with a gabled cover",
+      "description": "A raised timber porch with stairs and a gabled roof.",
+      "slug": "raised-porch-with-a-gabled-cover",
+      "photos": [
+        1065,
+        1067,
+        1066
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Red outbuilding entry deck",
+      "description": "A broad timber landing and steps outside a red outbuilding.",
+      "slug": "red-outbuilding-entry-deck",
+      "photos": [
+        1069,
+        1068
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Porch along a teal house",
+      "description": "Covered side and front porch views with timber rails and white trim.",
+      "slug": "porch-along-a-teal-house",
+      "photos": [
+        1075,
+        1074,
+        1073,
+        1071,
+        1070,
+        1072
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Yellow-house front porch",
+      "description": "Front entry and covered walkway views at a yellow house.",
+      "slug": "yellow-house-front-porch",
+      "photos": [
+        1076,
+        1077,
+        1078
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Long porch with white rails",
+      "description": "A covered porch with white rails and steps beside dark siding.",
+      "slug": "long-porch-with-white-rails",
+      "photos": [
+        1079
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Timber entry on a dark-sided home",
+      "description": "Gabled entry porch, stairs and an elevated roof view.",
+      "slug": "timber-entry-on-a-dark-sided-home",
+      "photos": [
+        1082,
+        1080,
+        1081
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Wide covered porch and steps",
+      "description": "A broad raised porch with timber handrails and a stair approach.",
+      "slug": "wide-covered-porch-and-steps",
+      "photos": [
+        1083,
+        1084,
+        1086,
+        1085
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Metal roof detail",
+      "description": "Corrugated roof surface photographed from above.",
+      "slug": "metal-roof-detail",
+      "photos": [
+        1058
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Blue screened patio",
+      "description": "Matching exterior and interior views of a blue screened patio beside a pool.",
+      "slug": "blue-screened-patio",
+      "photos": [
+        1052,
+        1051,
+        1056,
+        1053,
+        1050,
+        1054,
+        1055
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Blue poolside addition",
+      "description": "Two exterior views of a blue addition beside a curved swimming pool.",
+      "slug": "blue-poolside-addition",
+      "photos": [
+        1042,
+        1041
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Poolside metal-roof addition",
+      "description": "An elevated view of a light-colored addition beside a pool.",
+      "slug": "poolside-metal-roof-addition",
+      "photos": [
+        1043
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Wood-lined enclosed porch",
+      "description": "An enclosed sitting area with wood walls and ceiling.",
+      "slug": "wood-lined-enclosed-porch",
+      "photos": [
+        1011
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Screened outbuilding",
+      "description": "A dark framed screened structure with a gabled roof.",
+      "slug": "screened-outbuilding",
+      "photos": [
+        1044
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Outbuilding with attached wire run",
+      "description": "A small sided outbuilding with windows, shelving and an attached wire enclosure.",
+      "slug": "outbuilding-with-attached-wire-run",
+      "photos": [
+        1045,
+        1049,
+        1046,
+        1047,
+        1048
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Light siding and porch trim",
+      "description": "Light horizontal siding, dark shutters and white lattice around a porch.",
+      "slug": "light-siding-and-porch-trim",
+      "photos": [
+        1088,
+        1089
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Soffit and fascia at a brick house",
+      "description": "Porch ceiling panels and roof-edge trim along brick walls.",
+      "slug": "soffit-and-fascia-at-a-brick-house",
+      "photos": [
+        1090,
+        1091,
+        1092,
+        1093,
+        1094,
+        1095,
+        1096
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Gable siding at a red-brick house",
+      "description": "Light gable panels and roof-edge details above red brick.",
+      "slug": "gable-siding-at-a-red-brick-house",
+      "photos": [
+        1099,
+        1097,
+        1098
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Stone gable and dark trim",
+      "description": "A stone gable with an arched window and dark roof-edge trim.",
+      "slug": "stone-gable-and-dark-trim",
+      "photos": [
+        1100
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Windowed exterior and roof details",
+      "description": "A large windowed facade, horizontal siding, gable vents and chimney cladding.",
+      "slug": "windowed-exterior-and-roof-details",
+      "photos": [
+        1102,
+        1101,
+        1106,
+        1103,
+        1105,
+        1104,
+        1107,
+        1108
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Light-sided single-story exterior",
+      "description": "Two views of light siding and dark window frames.",
+      "slug": "light-sided-single-story-exterior",
+      "photos": [
+        1110,
+        1109
+      ]
+    },
+    {
+      "category": "outdoors",
+      "title": "Timber ramp and handrails",
+      "description": "A timber ramp, landing and rails beside a gray-sided home.",
+      "slug": "timber-ramp-and-handrails",
+      "photos": [
+        1115,
+        1111,
+        1113,
+        1112,
+        1114
+      ]
+    },
+    {
+      "category": "kitchens",
+      "title": "White kitchen with a coffered ceiling",
+      "description": "Matching views of white cabinetry, dark flooring and a detailed ceiling.",
+      "slug": "white-kitchen-with-a-coffered-ceiling",
+      "photos": [
+        1139,
+        1135,
+        1136,
+        1138,
+        1141,
+        1140
+      ]
+    },
+    {
+      "category": "kitchens",
+      "title": "Wood-cabinet kitchen",
+      "description": "A separate kitchen with wood cabinets and a long counter.",
+      "slug": "wood-cabinet-kitchen",
+      "photos": [
+        1134
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Living room with built-in shelving",
+      "description": "Two views of a living room with shelving around a central fireplace.",
+      "slug": "living-room-with-built-in-shelving",
+      "photos": [
+        1118,
+        1117
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Open storage cabinet",
+      "description": "A tall painted storage unit with open shelves.",
+      "slug": "open-storage-cabinet",
+      "photos": [
+        1116
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Room flooring",
+      "description": "Wood-look flooring in a room with an exterior door.",
+      "slug": "room-flooring",
+      "photos": [
+        1119
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Hallway flooring",
+      "description": "Wood-look flooring along a narrow hall.",
+      "slug": "hallway-flooring",
+      "photos": [
+        1120
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Blue garage with geometric lights",
+      "description": "After: the garage with blue walls and geometric overhead lighting. The light-colored garage photograph shows its earlier state from a different viewpoint.",
+      "slug": "blue-garage-with-geometric-lights",
+      "photos": [
+        1121
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Bright bedroom and closet doors",
+      "description": "A light bedroom with shuttered windows and closet doors.",
+      "slug": "bright-bedroom-and-closet-doors",
+      "photos": [
+        1123
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Walk-in closet shelving",
+      "description": "Two views of white open shelves in a walk-in closet.",
+      "slug": "walk-in-closet-shelving",
+      "photos": [
+        1124,
+        1125
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Wood-beam room and adjoining hall",
+      "description": "Wood ceilings, exposed beams, white trim and adjoining hallway details.",
+      "slug": "wood-beam-room-and-adjoining-hall",
+      "photos": [
+        1131,
+        1126,
+        1129,
+        1130,
+        1132,
+        1133
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Wood-lined entry doors",
+      "description": "Interior views of glazed doors surrounded by wood paneling.",
+      "slug": "wood-lined-entry-doors",
+      "photos": [
+        1127,
+        1128
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Gray room with wide windows",
+      "description": "Three matching views of a gray room with a ceiling fan and wood-look floor.",
+      "slug": "gray-room-with-wide-windows",
+      "photos": [
+        1144,
+        1142,
+        1143
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Color-block room",
+      "description": "Dark blue and red walls with light wood-look flooring.",
+      "slug": "color-block-room",
+      "photos": [
+        1145
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Warm-toned room",
+      "description": "A separate room with warm wall colors and a wood floor.",
+      "slug": "warm-toned-room",
+      "photos": [
+        1146
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Paneled room with tile floor",
+      "description": "A paneled room with a window and ceiling light.",
+      "slug": "paneled-room-with-tile-floor",
+      "photos": [
+        1147
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Arched dining space",
+      "description": "A dining area with an arched opening and pendant lighting.",
+      "slug": "arched-dining-space",
+      "photos": [
+        1148
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Tall-ceiling bedroom",
+      "description": "Two views of a tiled bedroom with a high ceiling and decorative trim.",
+      "slug": "tall-ceiling-bedroom",
+      "photos": [
+        1150,
+        1149
+      ]
+    },
+    {
+      "category": "bathrooms",
+      "title": "Compact light bathroom",
+      "description": "A light bathroom with a dark vanity and white fixtures.",
+      "slug": "compact-light-bathroom",
+      "photos": [
+        1151,
+        1152
+      ]
+    },
+    {
+      "category": "bathrooms",
+      "title": "Wood-lined bathroom",
+      "description": "Wood walls, a white vanity and a shower with corrugated wall panels.",
+      "slug": "wood-lined-bathroom",
+      "photos": [
+        1158,
+        1156,
+        1157,
+        1155
+      ]
+    },
+    {
+      "category": "bathrooms",
+      "title": "Corner shower",
+      "description": "A curved shower enclosure in a light-colored bathroom.",
+      "slug": "corner-shower",
+      "photos": [
+        1159
+      ]
+    },
+    {
+      "category": "bathrooms",
+      "title": "Shower with dark wood trim",
+      "description": "Two views of a white shower enclosure beside dark wood trim.",
+      "slug": "shower-with-dark-wood-trim",
+      "photos": [
+        1160,
+        1161
+      ]
+    },
+    {
+      "category": "bathrooms",
+      "title": "Bathroom flooring and fixtures",
+      "description": "Light wood-look flooring, horizontal wall panels and a compact sink.",
+      "slug": "bathroom-flooring-and-fixtures",
+      "photos": [
+        1165,
+        1162,
+        1164,
+        1163
+      ]
+    },
+    {
+      "category": "bathrooms",
+      "title": "Marble-look shower and bath",
+      "description": "Matching views of a tiled shower, pebble-style floor, niches and a window-side bathtub.",
+      "slug": "marble-look-shower-and-bath",
+      "photos": [
+        1171,
+        1166,
+        1169,
+        1167,
+        1170,
+        1172
+      ]
+    },
+    {
+      "category": "bathrooms",
+      "title": "Bathroom floor detail",
+      "description": "A close view of patterned flooring during work.",
+      "slug": "bathroom-floor-detail",
+      "photos": [
+        1168
+      ]
+    },
+    {
+      "category": "bathrooms",
+      "title": "Double vanity",
+      "description": "Two views of a light double vanity and wall mirror.",
+      "slug": "double-vanity",
+      "photos": [
+        1173,
+        1174
+      ]
+    },
+    {
+      "category": "concrete",
+      "title": "Entry landing and step",
+      "description": "A concrete landing and curved-front step outside a white-sided home.",
+      "slug": "entry-landing-and-step",
+      "photos": [
+        1008
+      ]
+    },
+    {
+      "category": "concrete",
+      "title": "Concrete pad beside gates",
+      "description": "A concrete pad next to a house and timber gate framing.",
+      "slug": "concrete-pad-beside-gates",
+      "photos": [
+        1009
+      ]
+    },
+    {
+      "category": "concrete",
+      "title": "Concrete along a fence",
+      "description": "A separate view of a concrete surface meeting a wood fence.",
+      "slug": "concrete-along-a-fence",
+      "photos": [
+        1010
+      ]
+    },
+    {
+      "category": "commercial",
+      "title": "Commercial room",
+      "description": "A commercial interior with patterned wall graphics and a dark floor.",
+      "slug": "commercial-room",
+      "photos": [
+        1000
+      ]
+    },
+    {
+      "category": "commercial",
+      "title": "Glass-front office spaces",
+      "description": "Matching views of glazed office spaces, striped flooring and desk areas.",
+      "slug": "glass-front-office-spaces",
+      "photos": [
+        1001,
+        1006,
+        1003,
+        1002,
+        1004,
+        1005
+      ]
+    },
+    {
+      "category": "interiors",
+      "title": "Interior work in progress",
+      "slug": "interior-work-in-progress",
+      "description": "Work underway around a living-room fireplace and built-in shelving. Photograph supplied by TrueCraft.",
+      "photos": [
+        2002
+      ]
+    },
+    {
+      "category": "fencing",
+      "title": "Fence work in progress",
+      "slug": "fence-work-in-progress",
+      "description": "Work underway beside a wood privacy fence. Photograph supplied by TrueCraft.",
+      "photos": [
+        2012
+      ]
+    }
+  ]
+}

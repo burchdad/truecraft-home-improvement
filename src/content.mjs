@@ -1,3 +1,5 @@
+import {coverageText} from "./service-areas.mjs";
+import {collections} from './gallery-pages.mjs';
 export const business = {
   name: "TrueCraft Home Improvements LLC",
   phone: "(903) 275-0361",
@@ -5,6 +7,7 @@ export const business = {
   base: "Tyler, Texas",
   established: "2021",
   reviewDate: "October 19, 2026",
+  reviewsUrl: "https://www.google.com/maps/place/TrueCraft+Home+Improvements+LLC/@32.212331,-95.555003,10z/data=!4m8!3m7!1s0x88e565b767eb47b7:0xecf931e13c3ce431!8m2!3d32.212331!4d-95.555003!9m1!1b1!16s%2Fg%2F11yfdxvk3k?hl=en&entry=ttu",
   maps: "https://www.google.com/maps/place/TrueCraft+Home+Improvements+LLC/@32.212331,-95.555003,10z/data=!3m1!4b1!4m6!3m5!1s0x88e565b767eb47b7:0xecf931e13c3ce431!8m2!3d32.212331!4d-95.555003!16s%2Fg%2F11yfdxvk3k?hl=en&entry=ttu",
 };
 export const services = [
@@ -90,12 +93,12 @@ export const routes = [
   [
     "/",
     "Home",
-    "Home improvements serving Tyler and surrounding East Texas communities. Explore TrueCraft’s kitchens, bathrooms, interior and outdoor project photography.",
+    `Home remodeling, kitchen and bathroom updates with TrueCraft. Serving ${coverageText}. Explore real projects and discuss your plans.`,
   ],
   [
     "/services/",
     "Services",
-    "Explore kitchen, bathroom, interior, exterior and fencing services with TrueCraft Home Improvements, serving Tyler and surrounding East Texas communities.",
+    `Explore kitchen, bathroom, interior, exterior and fencing services with TrueCraft Home Improvements, serving ${coverageText}.`,
   ],
   [
     "/our-work/",
@@ -105,12 +108,12 @@ export const routes = [
   [
     "/about/",
     "About",
-    "Meet TrueCraft Home Improvements LLC, serving Tyler and East Texas. Based in Tyler, Texas and established in 2021.",
+    `Meet TrueCraft Home Improvements LLC, serving ${coverageText}. Based in Tyler, Texas and established in 2021.`,
   ],
   [
     "/request-estimate/",
     "Plan Your Estimate",
-    "Plan your Tyler or East Texas home improvement project with TrueCraft. Call (903) 275-0361 and learn what to discuss about your project.",
+    `Plan a home improvement project with TrueCraft, serving ${coverageText}. Call (903) 275-0361 and learn what to discuss about your project.`,
   ],
   [
     "/privacy/",
@@ -122,8 +125,8 @@ export const routes = [
 export const servicePages = [
   {
     slug: "kitchen-updates", group: "kitchens-bathrooms", title: "Kitchen updates", photo: 25,
-    description: "Plan kitchen updates in Tyler and surrounding East Texas communities with TrueCraft. Discuss your space, priorities and next steps with Bo Frizzell.",
-    intro: "Start with what you want to change about the kitchen you use every day. TrueCraft works with homeowners on kitchen updates in Tyler and surrounding East Texas communities.",
+    description: `Plan kitchen remodeling and updates with TrueCraft, serving ${coverageText}. Explore kitchen photos and discuss scope, materials and an estimate.`,
+    intro: `Start with what you want to change about the kitchen you use every day. TrueCraft works with homeowners on kitchen updates in ${coverageText}.`,
     heading: "A clearer starting point for your kitchen",
     copy: "You may be looking to update the room’s appearance or improve how the space works for your household. Tell Bo which parts of the kitchen you want to keep and which need attention. Discuss the proposed scope before choosing materials or making plans around a start date.",
     details: ["The parts of the kitchen you would like to update.", "What currently feels inconvenient or unfinished.", "Approximate room dimensions and any ideas you have collected.", "Whether you will need to use the kitchen during the work."],
@@ -131,8 +134,8 @@ export const servicePages = [
   },
   {
     slug: "bathroom-updates", group: "kitchens-bathrooms", title: "Bathroom updates", photo: 15,
-    description: "Discuss bathroom updates with TrueCraft Home Improvements, serving Tyler and East Texas. Share your goals, room details and preferred timing with Bo.",
-    intro: "A bathroom update starts with understanding the room and what you want to improve. Talk with TrueCraft about your bathroom project in Tyler or a surrounding East Texas community.",
+    description: `Plan bathroom remodeling and updates with TrueCraft, serving ${coverageText}. View bathroom projects and discuss your room, priorities and estimate.`,
+    intro: `A bathroom update starts with understanding the room and what you want to improve. Talk with TrueCraft about your bathroom project in ${coverageText}.`,
     heading: "Plan around the room you have",
     copy: "Describe the existing bathroom, the changes you are considering and any areas that need attention. Distinguish the features you want to retain from those you hope to change. The conversation helps establish which work is a fit before a price or schedule is agreed.",
     details: ["Which bathroom you want to update and its approximate size.", "The changes that matter most to you.", "Any existing damage or concerns you have noticed.", "Whether another bathroom will be available during the project."],
@@ -140,8 +143,8 @@ export const servicePages = [
   },
   {
     slug: "drywall-interior-improvements", group: "interiors", title: "Drywall & interior improvements", photo: 1,
-    description: "Drywall installation, drywall repairs and interior improvements serving Tyler and East Texas. Discuss the rooms and repairs you have in mind with TrueCraft.",
-    intro: "TrueCraft offers drywall installation and repairs along with interior improvements for homes in Tyler and surrounding East Texas communities.",
+    description: `Drywall installation, drywall repairs and interior improvements serving ${coverageText}. Discuss the rooms and repairs you have in mind with TrueCraft.`,
+    intro: `TrueCraft offers drywall installation and repairs along with interior improvements for homes in ${coverageText}.`,
     heading: "From a repair to a room update",
     copy: "Tell us whether you need attention to an existing wall or ceiling, drywall installation, or a wider interior update. Describe the affected area and what you have noticed. If there is staining or recurring damage, mention it so the cause can be discussed before the finish work is planned.",
     details: ["The room and whether the work involves walls, ceilings or both.", "The approximate size and number of areas needing attention.", "Any recurring damage or known source of the problem.", "Other interior changes you would like to discuss at the same time."],
@@ -149,8 +152,8 @@ export const servicePages = [
   },
   {
     slug: "porches-decks", group: "exteriors", title: "Porches & decks", photo: 31,
-    description: "Explore porch and deck projects with TrueCraft, serving Tyler and surrounding East Texas communities. Discuss your outdoor space, ideas and project scope.",
-    intro: "Talk with TrueCraft about the porch or deck you have in mind for your home in Tyler or the surrounding East Texas area.",
+    description: `Explore porch and deck projects with TrueCraft, serving ${coverageText}. Discuss your outdoor space, ideas and project scope.`,
+    intro: `Talk with TrueCraft about the porch or deck you have in mind for your home in ${coverageText}.`,
     heading: "Think through how you use your outdoor space",
     copy: "Describe the existing space, how it connects to your home and what you would like to change. Whether your idea concerns a porch or decking, clear information about the site and your goals helps Bo discuss the project. Details such as dimensions, access and the condition of existing wood are useful starting points.",
     details: ["Whether you have an existing porch or deck and what needs attention.", "Approximate dimensions and how the space is accessed.", "Your ideas for using the space.", "Any visible wood damage, loose components or other concerns."],
@@ -158,8 +161,8 @@ export const servicePages = [
   },
   {
     slug: "fencing-wood-staining", group: "exteriors", title: "Fencing & wood staining", photo: 12,
-    description: "Discuss fencing and wood staining with TrueCraft Home Improvements in Tyler and East Texas. Share the wood surface, condition and changes you have in mind.",
-    intro: "TrueCraft’s outdoor work includes fencing and wood staining, serving Tyler and surrounding East Texas communities.",
+    description: `Discuss fencing and wood staining with TrueCraft Home Improvements in ${coverageText}. Share the wood surface, condition and changes you have in mind.`,
+    intro: `TrueCraft’s outdoor work includes fencing and wood staining, serving ${coverageText}.`,
     heading: "Start with the wood and its condition",
     copy: "For fencing, describe the area, the approximate length and what you want to change. For wood staining, tell us which surface needs attention and whether it already has a finish. The condition of the wood and the desired result are important parts of the discussion before work is planned.",
     details: ["Whether your request concerns fencing, staining or both.", "The approximate length or area involved.", "The condition of the wood and any existing coating.", "Access to the work area and your preferred timing."],
@@ -167,3 +170,9 @@ export const servicePages = [
   }
 ];
 for (const service of servicePages) routes.push([`/services/${service.slug}/`, service.title, service.description]);
+
+// Reference-style navigation destinations; coverage stays within established content.
+routes.push(["/areas/", "Service Areas", `TrueCraft serves ${coverageText}. Based in Tyler, Texas. Call to discuss availability for your location.`]);
+routes.push(["/blog/", "Remodeling Tips", "Plan your home improvement conversation: useful room details, project priorities and outdoor project questions for TrueCraft."]);
+
+for (const c of collections.categories) routes.push([`/our-work/${c.slug}/`, c.title + " Gallery", `Explore ${c.title.toLowerCase()} photographs supplied by TrueCraft Home Improvements, with matching views grouped for a closer look.`]);

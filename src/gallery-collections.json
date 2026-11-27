@@ -2,11 +2,13 @@
   "categories": [
     {
       "slug": "fencing",
-      "title": "Fencing & gates"
+      "title": "Fencing & gates",
+      "cover": 1035
     },
     {
       "slug": "outdoors",
-      "title": "Porches & exteriors"
+      "title": "Porches & exteriors",
+      "cover": 1060
     },
     {
       "slug": "kitchens",
@@ -22,7 +24,8 @@
     },
     {
       "slug": "concrete",
-      "title": "Concrete"
+      "title": "Concrete",
+      "cover": 1009
     },
     {
       "slug": "commercial",

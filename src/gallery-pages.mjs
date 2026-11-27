@@ -4,7 +4,7 @@ export function galleryNavigation(active='') {
  return `<nav class="collection-nav" aria-label="Photo collections"><a href="/our-work/"${active===''?' aria-current="page"':''}>All work</a>${collections.categories.map(c=>`<a href="/our-work/${c.slug}/"${active===c.slug?' aria-current="page"':''}>${c.title}</a>`).join('')}</nav>`;
 }
 export function collectionCards(photo) {
- return `<section class="wrap collection-directory" aria-labelledby="collections-title"><p class="eyebrow">EXPLORE THE DETAILS</p><h2 id="collections-title">Find your inspiration.</h2><p>Browse photographs by the space or project you have in mind.</p><div class="collection-cards">${collections.categories.map(c=>{const groups=collections.groups.filter(g=>g.category===c.slug);return `<a class="collection-card" href="/our-work/${c.slug}/">${photo(groups[0].photos[0])}<div><h3>${c.title}</h3><span>${groups.length} photo ${groups.length===1?'set':'sets'} · Explore →</span></div></a>`}).join('')}</div></section>`;
+ return `<section class="wrap collection-directory" aria-labelledby="collections-title"><p class="eyebrow">EXPLORE THE DETAILS</p><h2 id="collections-title">Find your inspiration.</h2><p>Browse photographs by the space or project you have in mind.</p><div class="collection-cards">${collections.categories.map(c=>{const groups=collections.groups.filter(g=>g.category===c.slug);return `<a class="collection-card" href="/our-work/${c.slug}/">${photo(c.cover ?? groups[0].photos[0])}<div><h3>${c.title}</h3><span>${groups.length} photo ${groups.length===1?'set':'sets'} · Explore →</span></div></a>`}).join('')}</div></section>`;
 }
 export function collectionPage(category,photo,photos,escape) {
  const groups=collections.groups.filter(g=>g.category===category.slug);

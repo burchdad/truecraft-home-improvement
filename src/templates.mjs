@@ -1,4 +1,4 @@
-import {searchTitles, planningAnswers} from "./search-content.mjs";
+import {searchTitles, searchDescriptions, planningAnswers} from "./search-content.mjs";
 import {editorialHome} from "./editorial-home.mjs";
 import {crewSection, serviceCrew} from "./crew.mjs";
 import {coverageText, coverageSchema} from "./service-areas.mjs";
@@ -101,7 +101,7 @@ function publicPrivacy() {
   return `${intro("WEBSITE PRIVACY", "A call-only website.", "This website does not offer an online inquiry form.")}<article class="wrap prose"><h2>Information on this website</h2><p>We do not ask you to enter personal or project information on this website. This build includes no advertising trackers, third-party fonts or embedded maps, and does not use cookies or local storage to collect inquiry details.</p><h2>Hosting and external services</h2><p>Vercel hosts this website and processes technical request information to deliver and secure its pages. See <a href="https://vercel.com/legal/privacy-policy">Vercel’s privacy policy</a> for its practices. Google review links open Google Maps, where Google’s privacy practices apply.</p><h2>Calling TrueCraft</h2><p>Phone links open your device’s calling application. Information you choose to share by phone is outside this website. For questions, call ${phone()}.</p><p class="fine">Website notice dated October 19, 2026.</p></article>`;
 }
 function servicePage(service) {
-  const collection = {"kitchen-updates":"kitchens","bathroom-updates":"bathrooms","interior-improvements":"interiors","porches-decks":"outdoors","fencing-wood-staining":"fencing"}[service.slug];
+  const collection = {"kitchen-updates":"kitchens","bathroom-updates":"bathrooms","drywall-interior-improvements":"interiors","porches-decks":"outdoors","fencing-wood-staining":"fencing"}[service.slug];
   return `<nav class="wrap" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/services/">Services</a> / <span aria-current="page">${escape(service.title)}</span></nav>${intro("HOME IMPROVEMENTS", `${escape(service.title)}`, escape(service.intro))}<section class="wrap about-section"><div>${photo(service.photo, {hero: true})}</div><div><h2>${escape(service.heading)}</h2><p>${escape(service.copy)}</p><h2>What to share with Bo</h2><ul>${service.details.map(detail => `<li>${escape(detail)}</li>`).join("")}</ul>${cta("Call to discuss your project")}<p><a href="/request-estimate/">Plan your estimate or send project details</a></p></div></section><section class="wrap prose section"><h2>${escape(service.question)}</h2><p>${escape(service.answer)}</p><h2>Discuss your project location</h2><p>TrueCraft serves ${coverageText}. Share your town or ZIP with Bo to confirm whether your location and project are a fit.</p><h2>Explore related work</h2>${collection ? `<p><a class="text-link" href="/our-work/${collection}/">Browse the ${escape(service.title.toLowerCase())} photo collection →</a></p>` : ""}<p><a href="/our-work/">View TrueCraft’s project photographs</a> and <a href="/services/">all services</a>.</p><ul>${servicePages.filter(other => other.slug !== service.slug).map(other => `<li><a href="/services/${other.slug}/">${escape(other.title)}</a></li>`).join("")}</ul></section>${planningAnswers(service.slug)}${serviceCrew(service.slug)}${contactBanner()}`;
 }
 function structuredData(siteUrl, service) {
@@ -132,7 +132,7 @@ export function render(path, { siteUrl, production = false, emailVerification = 
   const title = route?.[1] || "Page not found";
   const searchTitle = searchTitles[path] || `${title} | TrueCraft Home Improvements`;
   const description =
-    (production && !emailIntake && path === "/request-estimate/" ? `Call TrueCraft at (903) 275-0361 to discuss home improvements serving ${coverageText}.` : production && !emailIntake && path === "/privacy/" ? "How this call-only TrueCraft website handles information." : route?.[2]) || "Find your way back to TrueCraft Home Improvements.";
+    (production && !emailIntake && path === "/request-estimate/" ? `Call TrueCraft at (903) 275-0361 to discuss home improvements serving ${coverageText}.` : production && !emailIntake && path === "/privacy/" ? "How this call-only TrueCraft website handles information." : searchDescriptions[path] || route?.[2]) || "Find your way back to TrueCraft Home Improvements.";
   const content = (
     {
       "/": home,
